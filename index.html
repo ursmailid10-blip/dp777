@@ -1,0 +1,966 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#101827"><meta name="description" content="DP 777 — colourful live results, historical charts and the date-wise Milan Day archive from 1992 to 2026.">
+<title>DP 777 — Matka Results &amp; Charts</title>
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 64 64%22%3E%3Crect width=%2264%22 height=%2264%22 rx=%2214%22 fill=%22%2327105c%22/%3E%3Cpath d=%22M8 43 5 18l15 12L31 6l11 24 17-12-5 25z%22 fill=%22%23facc15%22/%3E%3Ctext x=%2232%22 y=%2255%22 font-size=%2215%22 font-weight=%22900%22 text-anchor=%22middle%22 fill=%22white%22%3E777%3C/text%3E%3C/svg%3E">
+<style>
+:root{--bg:#f3f6fb;--card:#fff;--ink:#172337;--muted:#627087;--line:#dfe6ef;--brand:#155eef;--brand2:#0b3da8;--green:#087f5b;--soft:#eaf1ff;--shadow:0 8px 24px #14264a0b}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font:15px/1.5 system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif}button,input,select{font:inherit}button,a,select{touch-action:manipulation}.top{background:linear-gradient(120deg,#101827,#1c3765);color:white;padding:22px 16px 18px}.wrap{max-width:1120px;margin:auto;padding:0 16px}.brand{display:flex;align-items:center;gap:12px}.logo{display:grid;place-items:center;width:48px;height:48px;border-radius:14px;background:#ffcc4d;color:#111827;font-weight:950;font-size:16px;box-shadow:inset 0 0 0 2px #fff5}.brand h1{font-size:25px;line-height:1;margin:0;letter-spacing:.5px}.brand p{margin:5px 0 0;color:#d8e4ff;font-size:13px}.live{margin-top:18px;padding:10px 12px;border:1px solid #ffffff30;background:#ffffff0e;border-radius:12px;font-size:13px;color:#e5edff;display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}.main{padding-top:12px;padding-bottom:36px}.today-panel{margin:4px 0 18px;border:3px solid #f0148c;border-radius:14px;overflow:hidden;background:#fff}.today-heading{background:linear-gradient(90deg,#d91178,#f0148c);color:#fff;text-align:center;font-size:21px;font-weight:900;letter-spacing:.4px;padding:12px 8px}.today-results{padding:8px 18px}.today-item{text-align:center;padding:12px 4px;border-bottom:1px solid #ddd}.today-item:last-child{border-bottom:0}.today-name{font-size:19px;font-weight:900;color:#111}.today-number{font-size:24px;font-weight:900;color:#111;margin-top:4px}.today-date{font-size:11px;color:#697386;margin-top:3px}.today-wait{font-size:18px;color:#19b99a;font-style:italic}.today-loading,.today-empty{padding:16px;text-align:center;color:#697386;font-size:13px}.section-title{font-size:18px;margin:0 0 12px}.cards{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:10px}.market{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:14px;text-align:left;cursor:pointer;box-shadow:var(--shadow);min-width:0;transition:border-color .15s,transform .15s;color:var(--ink)}.market:hover{transform:translateY(-1px);border-color:#9bb8f7}.market.active{border:2px solid var(--brand);padding:13px;background:var(--soft)}.market .name{font-weight:800;font-size:14px;display:block}.market .sub{font-size:12px;color:var(--muted);display:block;margin-top:4px}.market .arrow{float:right;color:var(--brand);font-size:18px}.panel{margin-top:18px;background:var(--card);border:1px solid var(--line);border-radius:16px;overflow:hidden;box-shadow:var(--shadow)}.panel-head{padding:17px;display:flex;justify-content:space-between;gap:12px;align-items:flex-start;flex-wrap:wrap;border-bottom:1px solid var(--line)}.panel-head h2{font-size:20px;margin:0}.panel-head p{margin:4px 0 0;color:var(--muted);font-size:13px}.controls{display:flex;gap:8px;flex-wrap:wrap}.field{border:1px solid var(--line);background:#fff;border-radius:9px;padding:9px 10px;min-height:40px;color:var(--ink)}.search{width:min(240px,100%)}.tabs{display:flex;gap:6px;padding:12px 16px;border-bottom:1px solid var(--line);overflow:auto}.tab{border:1px solid var(--line);background:white;border-radius:9px;padding:8px 13px;white-space:nowrap;cursor:pointer;color:var(--muted);font-weight:650}.tab.active{background:var(--brand);border-color:var(--brand);color:white}.summary{display:flex;gap:8px;flex-wrap:wrap;padding:12px 16px}.pill{font-size:12px;background:#f1f5f9;color:#34445c;border:1px solid var(--line);border-radius:999px;padding:5px 9px}.table-wrap{overflow:auto;max-height:65vh;border-top:1px solid var(--line)}table{width:100%;border-collapse:separate;border-spacing:0;min-width:680px;font-variant-numeric:tabular-nums}th,td{padding:10px 9px;text-align:center;border-bottom:1px solid #e8edf4;border-right:1px solid #edf1f6;white-space:nowrap}th{position:sticky;top:0;background:#f5f8fc;color:#51617a;font-size:11px;letter-spacing:.04em;text-transform:uppercase;z-index:1}td:first-child,th:first-child{position:sticky;left:0;background:#f8faff;z-index:2;text-align:left;min-width:132px}th:first-child{z-index:3}.cell-main{font-weight:800;letter-spacing:.06em}.cell-jodi{font-size:17px;font-weight:850;color:var(--brand2)}.empty{padding:28px 18px;text-align:center;color:var(--muted)}.empty strong{display:block;color:var(--ink);margin-bottom:5px}.notice{margin-top:14px;padding:13px 15px;background:#fff9e8;border:1px solid #f1dfaa;border-radius:12px;color:#69521b;font-size:12px}.foot{color:var(--muted);font-size:12px;margin-top:18px;display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}.source{color:var(--brand);text-decoration:none}.source:hover{text-decoration:underline}.status{font-size:12px;color:var(--muted)}
+.weekly-chart{display:table!important;width:100%!important;min-width:0!important;max-width:100%!important;table-layout:fixed!important;border-collapse:collapse;font-size:8px}
+.weekly-chart th{background:#f7f8fb;color:#26364f;text-align:center;border:1px solid #aab8ce;padding:8px 4px}
+.weekly-chart td{border:1px solid #bdc9da;padding:0;text-align:center;white-space:normal}
+.weekly-chart .week-date{width:54px;min-width:54px;max-width:54px;background:#f9fbff;font-weight:700;line-height:1.15;padding:2px 0;font-size:8px;overflow-wrap:anywhere}
+.weekly-chart .day-cell{width:auto;min-width:0;min-height:52px;vertical-align:middle;background:#fff}
+.result-stack{display:grid;grid-template-rows:1fr 1fr 1fr;min-height:52px;padding:0}
+.result-stack span{display:flex;align-items:center;justify-content:center;border-bottom:1px solid #edf1f6;font-weight:800;font-size:8px;line-height:1;min-height:16px;overflow:hidden;padding:0}
+.result-stack span:last-child{border-bottom:0}
+.weekly-chart .jodi-line{color:#d71920;font-size:16px;background:#fffafa}
+.weekly-chart .panel-line{letter-spacing:1px;color:#172337}
+.weekly-chart .pending{color:#9aa5b5;font-weight:600}
+.weekly-chart td:first-child{position:static;text-align:center}
+.weekly-chart th:first-child{position:static;text-align:center}
+.chart-hint{padding:9px 12px;background:#f7f9fc;border-bottom:1px solid var(--line);color:var(--muted);font-size:12px}
+@media(max-width:520px){.weekly-chart{display:table!important;min-width:0!important;width:100%!important;max-width:100%!important;font-size:8px;table-layout:fixed!important}.weekly-chart th{padding:4px 0;font-size:8px;letter-spacing:0}.weekly-chart th:first-child,.weekly-chart td:first-child{width:54px;min-width:54px;max-width:54px}.weekly-chart .week-date{width:54px;min-width:54px;max-width:54px;padding:2px 1px;font-size:8px;line-height:1.2;overflow-wrap:anywhere}.weekly-chart .day-cell{min-width:0;width:auto}.result-stack{min-height:48px;padding:0}.result-stack span{font-size:8px;min-height:15px;padding:0;letter-spacing:0}.weekly-chart .jodi-line{font-size:10px}.weekly-chart .year-row td{font-size:11px;padding:5px 8px}}
+.weekly-chart .week-start{border-top:2px solid #8094b3}
+.weekly-chart .year-row{display:none}.weekly-chart .year-row td{display:none}
+.weekly-chart .jodi-only{font-weight:850;font-size:17px}
+.weekly-chart col.date-col{width:54px}.date-to{display:block;font-size:7px;font-weight:500}.weekly-chart .result-stack .panel-line{font-size:8px}
+.weekly-chart .result-stack .jodi-line{font-size:11px;color:#e11d48;font-weight:900}
+@media(max-width:850px){.cards{grid-template-columns:repeat(2,minmax(0,1fr))}}@media(max-width:520px){.top{padding:18px 0 14px}.brand h1{font-size:22px}.logo{width:43px;height:43px}.wrap{padding:0 12px}.cards{gap:8px}.market{padding:12px}.market.active{padding:11px}.panel-head{padding:14px}.panel-head h2{font-size:18px}.controls{width:100%}.search{width:100%;flex:1}.field{max-width:100%}.tabs{padding:10px 12px}.summary{padding:10px 12px}.table-wrap{max-height:none}}
+/* Readable, equal-size weekly result cells */
+.weekly-chart{display:table!important;width:100%!important;min-width:0!important;max-width:100%!important;table-layout:fixed!important;border-collapse:separate;border-spacing:2px;font-size:10px;background:#eef2f8}
+.weekly-chart col.date-col{width:58px}
+.weekly-chart th{background:#253858;color:#fff;text-align:center;border:0;border-radius:5px;padding:7px 1px;font-size:9px;font-weight:900}
+.weekly-chart td{border:0;padding:0;text-align:center;white-space:normal}
+.weekly-chart .week-date{width:58px;min-width:58px;max-width:58px;background:#e8edf5;color:#334155;border-radius:5px;font-weight:800;line-height:1.2;padding:4px 1px;font-size:9px;overflow-wrap:anywhere}
+.weekly-chart .day-cell{width:auto;min-width:0;height:76px;vertical-align:middle;background:#fff;border:1px solid #dbe3ee;border-radius:5px;overflow:hidden}
+.result-stack{display:grid;grid-template-rows:1fr 1.25fr 1fr;height:76px;min-height:76px;padding:0}
+.result-stack span{display:flex;align-items:center;justify-content:center;border-bottom:1px solid #edf1f6;font-weight:800;font-size:10px;line-height:1;min-height:0;overflow:hidden;padding:0}
+.result-stack span:last-child{border-bottom:0}
+.weekly-chart .result-stack .panel-line{font-size:10px;letter-spacing:0;color:#253858;background:#fff}
+.weekly-chart .result-stack .jodi-line{font-size:17px;color:#c2185b;background:#fff0f6;font-weight:950}
+.weekly-chart .pending{color:#8a94a6;font-weight:800}
+.weekly-chart .jodi-only{height:76px;background:#fff0f6;color:#c2185b;font-weight:950;font-size:17px;border-radius:5px}
+.weekly-chart td:first-child,.weekly-chart th:first-child{position:static;text-align:center}
+.weekly-chart .week-start{border-top:0}
+.weekly-chart .year-row{display:none!important}.weekly-chart .year-row td{display:none!important}
+.date-to{display:block;font-size:8px;color:#64748b;font-weight:700;margin:2px 0}
+@media(max-width:520px){
+ .weekly-chart{display:table!important;width:100%!important;min-width:0!important;max-width:100%!important;table-layout:fixed!important;border-spacing:1px;font-size:9px}
+ .weekly-chart col.date-col{width:52px}
+ .weekly-chart th{padding:6px 0;font-size:8px;letter-spacing:0}
+ .weekly-chart th:first-child,.weekly-chart td:first-child{width:52px;min-width:52px;max-width:52px}
+ .weekly-chart .week-date{width:52px;min-width:52px;max-width:52px;padding:3px 0;font-size:8px;line-height:1.15;overflow-wrap:anywhere}
+ .weekly-chart .day-cell,.weekly-chart .jodi-only{height:66px;min-height:66px}
+ .result-stack{height:66px;min-height:66px;grid-template-rows:1fr 1.25fr 1fr}
+ .result-stack span{font-size:9px;min-height:0}
+ .weekly-chart .result-stack .panel-line{font-size:9px}
+ .weekly-chart .result-stack .jodi-line{font-size:15px}
+ .weekly-chart .jodi-only{font-size:15px}
+ .date-to{font-size:7px}
+}
+
+/* Reference-inspired warm live board and compact chart controls */
+.today-panel{border-color:#a9341b;background:#ffd09f;border-radius:10px}
+.today-heading{background:#ff009f;border:2px solid #fff;border-radius:8px;color:#fff}
+.today-results{padding:0 2px}
+.today-item{border-bottom:3px solid #a9341b;padding:9px 4px;background:#ffd09f}
+.today-name{font-size:clamp(17px,4.6vw,24px);font-style:italic;font-weight:950;color:#101a4b;text-transform:uppercase}
+.today-number{font-size:clamp(22px,5.2vw,30px);font-weight:950;color:#8d1748;margin-top:3px}
+.today-wait{color:#8d1748;font-style:normal}
+.today-empty{background:#ffd09f;color:#513d38}
+.go-bottom-wrap{display:flex;justify-content:center;padding:14px 8px;background:#fff}
+.go-bottom{border:2px solid #4b86b5;border-radius:2px;background:#9ed4fb;color:#071a5c;font-weight:900;padding:14px 30px;box-shadow:0 5px 10px #14264a22;cursor:pointer}
+.chart-title-band{background:#4057b5;color:#fff;text-align:center;font-size:clamp(18px,4.5vw,26px);font-weight:950;padding:8px 4px}
+.weekly-chart th{background:#ffc400!important;color:#161616!important;border:1px solid #b77a16!important;border-radius:0!important;font-size:12px!important}
+.weekly-chart .week-date{background:#ffd4ad!important;color:#111!important;border-radius:0!important}
+.weekly-chart .day-cell{border:1px solid #1e1e1e!important;border-radius:0!important}
+.weekly-chart .result-stack .panel-line{color:#151515!important;background:#ffd4ad!important}
+.weekly-chart .result-stack .jodi-line{color:#172e78!important;background:#ffd4ad!important;font-size:clamp(12px,2.8vw,18px)!important}
+@media(max-width:520px){.today-results{padding:0}.today-item{padding:8px 2px}.today-name{font-size:18px}.today-number{font-size:23px}.go-bottom{padding:12px 26px}.weekly-chart th{font-size:10px!important}}
+
+.timing-panel{margin:12px 0 18px;border:1px solid #d4dce7;border-radius:12px;background:#fff;overflow:hidden}
+.timing-heading{background:#253858;color:#fff;font-weight:900;text-align:center;padding:10px}
+.timing-table{width:100%;min-width:0;border-collapse:collapse;font-variant-numeric:tabular-nums}
+.timing-table th{position:static;background:#ffc400;color:#151515;text-transform:none;font-size:12px;letter-spacing:0}
+.timing-table th,.timing-table td{padding:8px 6px;border-bottom:1px solid #d9dee7;text-align:center;white-space:normal}
+.timing-table td:first-child{position:static;background:#fff;text-align:left;min-width:0;font-weight:750}
+.market-state{font-size:11px;font-weight:800;display:block;color:#586579;margin-top:2px}
+.market-state.is-open{color:#087f5b}.market-state.is-next{color:#a35c00}
+
+/* DP 777 visual refresh: vivid, readable, mobile-first */
+:root{--bg:#f4f2ff;--card:#fff;--ink:#17133b;--muted:#656486;--line:#dedcf6;--brand:#6d28d9;--brand2:#312e81;--green:#087f5b;--soft:#f0eaff;--shadow:0 10px 28px #34206f16}
+body{background:radial-gradient(ellipse at top left,#e9e6ff 0,transparent 42%),linear-gradient(180deg,#f8f7ff,#f1f7ff 60%,#fff7fc);color:var(--ink)}
+.top{background:linear-gradient(125deg,#17133b 0%,#312e81 48%,#7c2dba 100%);position:relative;overflow:hidden}
+.top:after{content:"";position:absolute;width:230px;height:230px;border-radius:50%;right:-65px;top:-110px;background:#f0abfc26;pointer-events:none}
+.logo{background:linear-gradient(135deg,#fef08a,#fbbf24);color:#231942;border-radius:16px;box-shadow:0 7px 22px #05001f55,inset 0 0 0 2px #fff9}
+.brand h1{letter-spacing:1px;text-shadow:0 2px 16px #0003}
+.live{background:#ffffff12;border-color:#ffffff45;backdrop-filter:blur(8px);border-radius:14px}
+.today-panel{border:2px solid #7c3aed;background:#fff;border-radius:18px;box-shadow:0 14px 35px #7c3aed1c}
+.today-heading{background:linear-gradient(90deg,#7c3aed,#db2777,#f43f5e);border:0;border-radius:0;font-size:clamp(20px,4vw,26px);padding:14px 8px;letter-spacing:.7px}
+.today-item{background:linear-gradient(100deg,#fff7fd,#f5f3ff);border-bottom:1px solid #e9d5ff;padding:12px 8px}
+.today-item:nth-child(even){background:linear-gradient(100deg,#eff6ff,#faf5ff)}
+.today-name{color:#312e81;font-style:normal;letter-spacing:.35px}
+.today-number{color:#be185d;text-shadow:0 1px 0 #fff;font-variant-numeric:tabular-nums}
+.today-wait{color:#7c3aed}
+.today-empty{background:#f5f3ff;color:#514a76;padding:12px}
+.section-title{color:#312e81;font-weight:900}
+.market{border:1px solid #e0dcfa;border-radius:16px;background:linear-gradient(145deg,#fff,#faf9ff);box-shadow:0 7px 18px #312e8110}
+.market:hover{border-color:#a78bfa;box-shadow:0 12px 24px #6d28d921;transform:translateY(-2px)}
+.market.active{border:2px solid #7c3aed;background:linear-gradient(135deg,#f3e8ff,#eff6ff);box-shadow:0 9px 22px #7c3aed24}
+.market .name{color:#28205f;font-size:14px}
+.market .arrow{color:#9333ea}
+.panel{border:1px solid #dedcf6;border-radius:18px;box-shadow:0 12px 30px #312e8110}
+.panel-head{background:linear-gradient(100deg,#fff,#faf5ff)}
+.panel-head h2{color:#312e81;font-weight:900}
+.field{border-color:#d7d3f5;background:#fff;border-radius:11px}
+.field:focus{outline:3px solid #c4b5fd;outline-offset:1px}
+.tab{border-color:#dedcf6;background:#fff;color:#554d7b;border-radius:11px}
+.tab.active{background:linear-gradient(110deg,#6d28d9,#9333ea);border-color:#7c3aed;box-shadow:0 4px 12px #7c3aed30}
+.pill{background:#f3e8ff;border-color:#e9d5ff;color:#5b21b6}
+.chart-title-band{background:linear-gradient(100deg,#312e81,#6d28d9,#be185d);letter-spacing:.7px}
+.weekly-chart th{background:#7c3aed!important;color:#fff!important;border-color:#6d28d9!important}
+.weekly-chart .week-date{background:#ede9fe!important;color:#312e81!important}
+.weekly-chart .day-cell{border-color:#d8b4fe!important}
+.weekly-chart .result-stack .panel-line{background:#f8f7ff!important;color:#312e81!important}
+.weekly-chart .result-stack .jodi-line{background:#fce7f3!important;color:#9d174d!important}
+.go-bottom{background:linear-gradient(110deg,#a5f3fc,#c4b5fd);border:1px solid #8b5cf6;color:#312e81;border-radius:12px;box-shadow:0 6px 14px #6d28d926}
+.notice{background:#fff7ed;border-color:#fed7aa;color:#7c2d12;border-radius:14px}
+.source{color:#6d28d9;font-weight:750}
+.foot{border-top:1px solid #e5e1f7;padding-top:12px}
+@media(max-width:520px){.today-panel{border-radius:14px}.today-heading{font-size:20px}.market{border-radius:13px}.panel{border-radius:15px}}
+
+.go-top-wrap{display:flex;justify-content:center;padding:14px 8px}
+.go-top{display:inline-block;text-decoration:none;background:linear-gradient(110deg,#a5f3fc,#c4b5fd);border:1px solid #8b5cf6;color:#312e81;border-radius:12px;box-shadow:0 6px 14px #6d28d926;padding:12px 30px;font-weight:900}
+.bottom-results{margin-top:12px}
+/* DP 777 signature logo and refined mobile header */
+.brand{gap:11px}
+.brand-logo{display:grid;place-items:center;flex:0 0 56px;width:56px;height:56px;border-radius:16px;background:linear-gradient(145deg,#4c1d95,#160b3e);border:1px solid #facc15;box-shadow:0 5px 16px #02061755,inset 0 0 0 2px #ffffff14}
+.brand-logo svg{width:43px;height:43px;filter:drop-shadow(0 2px 2px #0005)}
+.brand-copy h1{font-size:clamp(25px,5vw,34px);line-height:1;margin:0;font-weight:1000;letter-spacing:.6px;text-shadow:0 2px 10px #02061755}
+.brand-copy h1 span{color:#fff}
+.brand-copy h1 strong{color:#facc15}
+.brand-copy p{margin:5px 0 0;color:#e9d5ff;font-size:10px;font-weight:850;letter-spacing:1.1px}
+.top{background:radial-gradient(ellipse at 12% 0%,#5b21b6 0%,transparent 48%),linear-gradient(115deg,#100526,#27105c 55%,#101827);border-bottom:3px solid #facc15}
+.today-panel{box-shadow:0 12px 28px #312e8114}
+.today-heading{background:linear-gradient(100deg,#4c1d95,#7c3aed);text-transform:uppercase}
+.today-number{color:#be185d}
+.today-wait{color:#7c3aed;font-weight:850}
+.market:focus-visible,.tab:focus-visible,.go-top:focus-visible,.brand-logo:focus-visible{outline:3px solid #facc15;outline-offset:3px}
+@media(max-width:520px){.brand-logo{flex-basis:48px;width:48px;height:48px;border-radius:13px}.brand-logo svg{width:37px;height:37px}.brand-copy p{font-size:9px;letter-spacing:.7px}.live{margin-top:13px}}
+
+/* User-requested chart style: compact, reference-like sizing, grayscale only */
+.weekly-chart{background:#fff!important;border-spacing:1px!important;color:#111!important}
+.weekly-chart th{background:#e5e5e5!important;color:#111!important;border:1px solid #777!important;border-radius:0!important;font-size:clamp(9px,2.2vw,13px)!important;font-weight:900!important;padding:7px 1px!important}
+.weekly-chart .week-date{background:#f1f1f1!important;color:#111!important;border:1px solid #777!important;border-radius:0!important;font-size:clamp(8px,1.9vw,12px)!important;line-height:1.2!important;font-weight:800!important}
+.weekly-chart .day-cell{background:#fff!important;border:1px solid #777!important;border-radius:0!important}
+.weekly-chart .result-stack .panel-line{background:#fff!important;color:#111!important;font-size:clamp(9px,2vw,12px)!important;letter-spacing:0!important}
+.weekly-chart .result-stack .jodi-line{background:#f3f3f3!important;color:#111!important;font-size:clamp(13px,3vw,18px)!important;font-weight:900!important}
+.weekly-chart .jodi-only{background:#f3f3f3!important;color:#111!important;font-size:clamp(13px,3vw,18px)!important}
+.weekly-chart .pending{color:#777!important}
+.weekly-chart .week-start{border-top:1px solid #777!important}
+.chart-title-band{background:#e5e5e5!important;color:#111!important;letter-spacing:0!important;border:1px solid #777!important}
+.chart-hint{background:#f5f5f5!important;color:#333!important}
+.go-bottom-wrap{background:#fff!important}
+.go-bottom{background:#eee!important;color:#111!important;border:1px solid #777!important;border-radius:0!important;box-shadow:none!important}
+@media(max-width:520px){
+ .weekly-chart{border-spacing:1px!important}
+ .weekly-chart th{font-size:8px!important;padding:6px 0!important}
+ .weekly-chart .week-date{font-size:8px!important;padding:3px 1px!important}
+ .weekly-chart .day-cell,.weekly-chart .jodi-only{height:68px!important;min-height:68px!important}
+ .result-stack{height:68px!important;min-height:68px!important;grid-template-rows:1fr 1.25fr 1fr!important}
+ .result-stack span{min-height:0!important}
+ .weekly-chart .result-stack .panel-line{font-size:9px!important}
+ .weekly-chart .result-stack .jodi-line{font-size:14px!important}
+ .weekly-chart .jodi-only{font-size:14px!important}
+}
+
+
+/* Exact reference layout: digits run horizontally across each day cell, not vertically */
+.weekly-chart{background:#fff!important;border-spacing:0!important;border-collapse:collapse!important;table-layout:fixed!important}
+.weekly-chart th{background:#ffc400!important;color:#111!important;border:2px solid #22b8d5!important;border-radius:0!important;padding:6px 1px!important;font-size:clamp(10px,2.6vw,18px)!important;font-weight:900!important}
+.weekly-chart .week-date{background:#ffd09f!important;color:#111!important;border:2px solid #22b8d5!important;border-radius:0!important;font-size:clamp(9px,2.4vw,16px)!important;line-height:1.35!important;font-weight:800!important;padding:5px 2px!important;width:88px;min-width:88px;max-width:88px}
+.weekly-chart .day-cell{background:#ffd09f!important;border:2px solid #22b8d5!important;border-radius:0!important;height:112px!important;min-height:112px!important;vertical-align:middle!important}
+.weekly-chart .result-stack{display:grid!important;grid-template-rows:1fr 1.25fr 1fr!important;height:108px!important;min-height:108px!important;padding:0 2px!important}
+.weekly-chart .result-stack span{display:flex!important;align-items:center!important;justify-content:space-between!important;border:0!important;background:transparent!important;color:#111!important;font-size:clamp(11px,2.8vw,18px)!important;line-height:1.1!important;min-height:0!important;height:auto!important;padding:0 1px!important;font-weight:850!important;overflow:hidden!important}
+.weekly-chart .result-stack .jodi-line{justify-content:center!important;background:transparent!important;color:#111!important;font-size:clamp(17px,4vw,27px)!important;line-height:1!important;font-weight:950!important}
+.weekly-chart .jodi-only{height:112px!important;background:#ffd09f!important;color:#111!important;font-size:clamp(17px,4vw,27px)!important;border:2px solid #22b8d5!important;border-radius:0!important}
+.weekly-chart .pending{color:#111!important}
+.chart-title-band{background:#4057b5!important;color:#fff!important;letter-spacing:0!important;border:0!important}
+.chart-hint{background:#fff!important;color:#333!important}
+.go-bottom-wrap{background:#fff!important}
+.go-bottom{background:#eee!important;color:#111!important;border:1px solid #777!important;border-radius:0!important;box-shadow:none!important}
+@media(max-width:520px){
+ .weekly-chart{border-spacing:0!important;width:100%!important}
+ .weekly-chart col.date-col{width:88px!important}
+ .weekly-chart th{font-size:10px!important;padding:5px 0!important}
+ .weekly-chart .week-date{width:88px!important;min-width:88px!important;max-width:88px!important;font-size:9px!important;padding:4px 1px!important}
+ .weekly-chart .day-cell,.weekly-chart .jodi-only{height:112px!important;min-height:112px!important}
+ .weekly-chart .result-stack{height:108px!important;min-height:108px!important}
+ .weekly-chart .result-stack span{font-size:10px!important}
+ .weekly-chart .result-stack .jodi-line{font-size:17px!important}
+}
+
+
+/* Screenshot layout: left/centre/right digit positions on each row */
+.weekly-chart .result-stack{display:grid!important;grid-template-rows:1fr 1.25fr 1fr!important;height:108px!important;min-height:108px!important;padding:0 3px!important}
+.weekly-chart .result-stack .panel-line,.weekly-chart .result-stack .jodi-line{display:grid!important;grid-template-columns:1fr 1fr 1fr!important;align-items:center!important;justify-items:center!important;position:static!important;top:auto!important;left:auto!important;right:auto!important;height:auto!important;min-height:0!important;margin:0!important;padding:0!important;border:0!important;background:transparent!important;line-height:1!important;overflow:hidden!important}
+.weekly-chart .result-stack .panel-line{font-size:clamp(11px,2.8vw,18px)!important;color:#111!important;font-weight:850!important}
+.weekly-chart .result-stack .jodi-line{font-size:clamp(17px,4vw,27px)!important;color:#111!important;font-weight:950!important}
+.weekly-chart .result-stack .jodi-line span:first-child{text-align:right;justify-self:end}
+.weekly-chart .result-stack .jodi-line strong{justify-self:center;font-weight:950}
+.weekly-chart .result-stack .jodi-line span:last-child{text-align:left;justify-self:start}
+@media(max-width:520px){.weekly-chart .result-stack{height:108px!important;min-height:108px!important}.weekly-chart .result-stack .panel-line{font-size:10px!important}.weekly-chart .result-stack .jodi-line{font-size:17px!important}}
+
+
+/* DP 777 compact seven-day historical chart: mobile reference layout */
+.weekly-chart{
+ width:100%!important;min-width:0!important;max-width:100%!important;
+ table-layout:fixed!important;border-collapse:collapse!important;border-spacing:0!important;
+ font-size:10px!important;
+}
+.weekly-chart col.date-col{width:32px!important}
+.weekly-chart th,.weekly-chart td{
+ box-sizing:border-box!important;min-width:0!important;border:2px solid #20b7cb!important;
+ padding:0!important;
+}
+.weekly-chart th{
+ background:#ffc400!important;color:#111!important;height:38px!important;
+ font-size:11px!important;font-weight:800!important;line-height:1!important;
+ text-align:center!important;white-space:nowrap!important;
+}
+.weekly-chart th:first-child,.weekly-chart td:first-child,.weekly-chart .week-date{
+ width:32px!important;min-width:32px!important;max-width:32px!important;
+ background:#ffc400!important;color:#111!important;font-size:8px!important;
+ line-height:1.1!important;padding:2px!important;overflow-wrap:anywhere!important;
+}
+.weekly-chart .day-cell{
+ width:auto!important;min-width:0!important;min-height:0!important;height:78px!important;
+ vertical-align:middle!important;background:#ffd09f!important;overflow:hidden!important;
+}
+.weekly-chart .result-stack{
+ display:grid!important;grid-template-rows:1fr 1.15fr 1fr!important;
+ min-height:0!important;height:76px!important;padding:0!important;background:#ffd09f!important;
+}
+.weekly-chart .result-stack span{
+ box-sizing:border-box!important;min-width:0!important;min-height:0!important;
+ height:auto!important;padding:0!important;margin:0!important;border:0!important;
+ background:#ffd09f!important;color:#111!important;font-size:9px!important;
+ font-weight:600!important;letter-spacing:0!important;line-height:1!important;overflow:hidden!important;
+}
+.weekly-chart .result-stack .panel-line{
+ display:flex!important;justify-content:space-between!important;align-items:center!important;
+ color:#111!important;font-size:9px!important;letter-spacing:0!important;padding:0 2px!important;
+}
+.weekly-chart .result-stack .jodi-line{
+ display:flex!important;align-items:center!important;justify-content:space-between!important;
+ background:#ffd09f!important;color:#111!important;font-size:10px!important;
+ font-weight:800!important;line-height:1!important;padding:0 2px!important;
+}
+.weekly-chart .result-stack .jodi-line strong{
+ font-size:16px!important;font-weight:800!important;line-height:1!important;
+}
+.weekly-chart .jodi-only{
+ background:#ffd09f!important;color:#111!important;font-size:12px!important;font-weight:800!important;
+}
+.weekly-chart .pending{font-size:9px!important;color:#555!important}
+.weekly-chart .week-start{border-top:2px solid #20b7cb!important}
+@media(max-width:520px){
+ .table-wrap{width:100%!important;max-width:100%!important;overflow-x:auto!important}
+ .weekly-chart{width:100%!important;min-width:0!important;table-layout:fixed!important}
+ .weekly-chart col.date-col{width:26px!important}
+ .weekly-chart th:first-child,.weekly-chart td:first-child,.weekly-chart .week-date{
+  width:26px!important;min-width:26px!important;max-width:26px!important;
+  font-size:7px!important;padding:1px!important;
+ }
+ .weekly-chart th{height:32px!important;font-size:9px!important}
+ .weekly-chart .day-cell{height:68px!important}
+ .weekly-chart .result-stack{height:66px!important}
+ .weekly-chart .result-stack span{font-size:8px!important}
+ .weekly-chart .result-stack .panel-line{font-size:8px!important;padding:0 1px!important}
+ .weekly-chart .result-stack .jodi-line{font-size:8px!important;padding:0 1px!important}
+ .weekly-chart .result-stack .jodi-line strong{font-size:13px!important}
+ .weekly-chart .jodi-only{font-size:10px!important}
+}
+
+
+/* Match the supplied reference: vertical open/close digits around a centered jodi */
+.weekly-chart .result-grid{
+ display:grid!important;grid-template-columns:minmax(0,1fr) minmax(0,1.5fr) minmax(0,1fr)!important;
+ align-items:stretch!important;justify-items:stretch!important;
+ height:100%!important;min-height:0!important;background:#ffd09f!important;
+}
+.weekly-chart .digit-stack{
+ display:grid!important;grid-template-rows:repeat(3,minmax(0,1fr))!important;
+ align-items:center!important;justify-items:center!important;min-width:0!important;
+ background:#ffd09f!important;color:#111!important;
+}
+.weekly-chart .digit-stack span{
+ display:flex!important;align-items:center!important;justify-content:center!important;
+ width:100%!important;min-width:0!important;min-height:0!important;height:auto!important;
+ padding:0!important;border:0!important;background:#ffd09f!important;color:#111!important;
+ font-size:10px!important;font-weight:500!important;line-height:1!important;overflow:hidden!important;
+}
+.weekly-chart .jodi-center{
+ display:flex!important;align-items:center!important;justify-content:center!important;
+ min-width:0!important;min-height:0!important;background:#ffd09f!important;color:#111!important;
+ overflow:hidden!important;
+}
+.weekly-chart .jodi-center strong{
+ display:block!important;font-size:17px!important;line-height:1!important;
+ font-weight:800!important;letter-spacing:0!important;color:#111!important;
+}
+@media(max-width:520px){
+ .weekly-chart .digit-stack span{font-size:8px!important}
+ .weekly-chart .jodi-center strong{font-size:13px!important}
+}
+
+
+/* Make Jodi numbers prominent and readable on every chart view */
+.weekly-chart .jodi-center strong{
+  font-size:23px!important;
+  font-weight:900!important;
+  letter-spacing:0!important;
+  line-height:1!important;
+}
+.weekly-chart .jodi-only{
+  font-size:20px!important;
+  font-weight:900!important;
+}
+.weekly-chart .result-stack .jodi-line strong{
+  font-size:23px!important;
+  font-weight:900!important;
+}
+@media(max-width:520px){
+  .weekly-chart .jodi-center strong{
+    font-size:17px!important;
+    font-weight:900!important;
+  }
+  .weekly-chart .jodi-only{
+    font-size:15px!important;
+    font-weight:900!important;
+  }
+  .weekly-chart .result-stack .jodi-line strong{
+    font-size:17px!important;
+    font-weight:900!important;
+  }
+}
+
+
+/* Reference-matched Jodi chart: make two-digit Jodi values clearly readable */
+.weekly-chart .jodi-only{
+  font-size:28px!important;
+  line-height:1!important;
+  font-weight:900!important;
+  color:#111!important;
+}
+.weekly-chart .jodi-center strong{
+  font-size:30px!important;
+  line-height:1!important;
+  font-weight:900!important;
+  color:#111!important;
+}
+.weekly-chart .result-stack .jodi-line strong{
+  font-size:28px!important;
+  line-height:1!important;
+  font-weight:900!important;
+}
+@media(max-width:520px){
+  .weekly-chart .jodi-only{
+    font-size:clamp(18px,5.5vw,26px)!important;
+    line-height:1!important;
+    font-weight:900!important;
+  }
+  .weekly-chart .jodi-center strong{
+    font-size:clamp(18px,5.5vw,26px)!important;
+    line-height:1!important;
+    font-weight:900!important;
+  }
+  .weekly-chart .result-stack .jodi-line strong{
+    font-size:clamp(18px,5.5vw,26px)!important;
+    line-height:1!important;
+    font-weight:900!important;
+  }
+}
+
+
+/* Separate sizing: bold large Jodi-only view, safe fit for panel view */
+.weekly-chart .jodi-only{
+  font-size:clamp(25px,7vw,36px)!important;
+  font-weight:900!important;
+  line-height:1!important;
+  text-align:center!important;
+  vertical-align:middle!important;
+  overflow:hidden!important;
+  color:#111!important;
+}
+.weekly-chart .jodi-only .jodi-line{
+  display:inline!important;
+  font-size:inherit!important;
+  line-height:1!important;
+  font-weight:900!important;
+  color:#111!important;
+  background:transparent!important;
+  padding:0!important;
+  margin:0!important;
+  border:0!important;
+  white-space:nowrap!important;
+  text-shadow:1px 2px 0 #ffd400!important;
+}
+.weekly-chart .jodi-only .pending{
+  font-size:18px!important;
+  color:#111!important;
+}
+.weekly-chart .jodi-center strong{
+  font-size:clamp(15px,4vw,20px)!important;
+  font-weight:900!important;
+  line-height:1!important;
+  max-width:100%!important;
+  white-space:nowrap!important;
+}
+@media(max-width:520px){
+  .weekly-chart .jodi-only{
+    font-size:clamp(24px,7.5vw,33px)!important;
+    padding:0!important;
+  }
+  .weekly-chart .jodi-only .jodi-line{
+    font-size:inherit!important;
+  }
+  .weekly-chart .jodi-center strong{
+    font-size:clamp(14px,4vw,18px)!important;
+  }
+}
+
+
+/* Red Jodi highlighting: doubles and cut-digit pairs */
+.weekly-chart .red-jodi{color:#e00000!important;text-shadow:1px 1px 0 #ffd400!important}
+
+
+/* Higher-specificity red styling so chart base colours cannot override red Jodis */
+.weekly-chart .jodi-only .jodi-line.red-jodi,
+.weekly-chart .jodi-center strong.red-jodi{
+  color:#e00000!important;
+  -webkit-text-fill-color:#e00000!important;
+  text-shadow:1px 2px 0 #ffd400!important;
+}
+
+
+/* Attractive high-contrast chart palette: indigo, turquoise, ice blue and warm gold */
+.weekly-chart{
+  border-color:#19B8B2!important;
+  background:#F2F7FF!important;
+}
+.weekly-chart th{
+  background:#392A8C!important;
+  color:#FFFFFF!important;
+  border-color:#19B8B2!important;
+  text-shadow:none!important;
+}
+.weekly-chart td{
+  border-color:#19B8B2!important;
+  background:#EAF3FF!important;
+  color:#172033!important;
+}
+.weekly-chart th:first-child,
+.weekly-chart td:first-child,
+.weekly-chart .week-date{
+  background:#FFE08A!important;
+  color:#202044!important;
+  border-color:#19B8B2!important;
+}
+.weekly-chart .day-cell,
+.weekly-chart .result-grid,
+.weekly-chart .digit-stack,
+.weekly-chart .digit-stack span,
+.weekly-chart .jodi-center,
+.weekly-chart .result-stack,
+.weekly-chart .result-stack span,
+.weekly-chart .result-stack .panel-line,
+.weekly-chart .result-stack .jodi-line{
+  background:#EAF3FF!important;
+  color:#172033!important;
+}
+.weekly-chart .jodi-center strong,
+.weekly-chart .jodi-only .jodi-line:not(.red-jodi){
+  color:#172033!important;
+  -webkit-text-fill-color:#172033!important;
+  text-shadow:none!important;
+}
+.weekly-chart .jodi-only .jodi-line.red-jodi,
+.weekly-chart .jodi-center strong.red-jodi{
+  color:#D7193F!important;
+  -webkit-text-fill-color:#D7193F!important;
+  text-shadow:1px 1px 0 #FFE08A!important;
+}
+.weekly-chart .result-stack .jodi-line strong{
+  color:#172033!important;
+  text-shadow:none!important;
+}
+@media(max-width:520px){
+  .weekly-chart th{background:#392A8C!important;color:#FFFFFF!important}
+  .weekly-chart td{background:#EAF3FF!important}
+}
+
+
+/* Updated results: pana and separators stay black; only the Jodi may be red */
+.today-number{color:#111111!important;-webkit-text-fill-color:#111111!important;font-variant-numeric:tabular-nums}
+.today-number .today-separator{color:#111111!important;-webkit-text-fill-color:#111111!important;padding:0 2px}
+.today-number .today-jodi{color:#111111!important;-webkit-text-fill-color:#111111!important}
+.today-number .today-jodi.red-jodi{color:#D7193F!important;-webkit-text-fill-color:#D7193F!important;text-shadow:none!important}
+
+/* Mobile reference-inspired styling */
+body{background:#050505;color:#fff;font-family:Georgia,"Times New Roman",serif}
+.top{background:#050505;padding:14px 10px 10px;border-bottom:3px solid #ffbf00}
+.wrap{max-width:1000px;padding-left:10px;padding-right:10px}
+.brand{justify-content:center;padding:8px 4px 14px}
+.brand-copy h1{font-size:35px;font-style:italic;color:#ffca05;text-shadow:2px 2px #b40030}
+.brand-copy p{font-weight:900;letter-spacing:2px;color:#fff}
+.live{margin-top:6px;background:#f8fff8;color:#291b08;border:5px solid #e8a400;border-radius:14px;justify-content:center;text-align:center;font-weight:800}
+.live span:first-child{font-size:16px}.live #updated{width:100%;font-size:12px;color:#5d4b26}
+.today-panel{border:4px solid #f5ad00;border-radius:13px;background:#fff;margin:5px 0 16px}
+.today-heading{background:linear-gradient(#ffdf18,#ff9d00);color:#171000;font-size:21px;font-weight:1000;text-shadow:1px 1px #fff}
+.today-results{padding:0 8px;color:#171717}.today-item{padding:13px 5px;border-bottom:3px solid #e0a000;background:#fff}
+.today-name{font-size:clamp(17px,4.6vw,24px);font-weight:900;font-style:italic;color:#147a24;text-transform:uppercase}
+.today-number{font-size:clamp(23px,5.5vw,30px);font-weight:1000;color:#080808}
+.today-wait{font-size:16px;color:#6e6e6e}.today-empty{font:12px/1.5 system-ui,sans-serif;color:#4d5561}
+.section-title{background:linear-gradient(90deg,#ffcf00,#ff8d00);color:#171000;text-align:center;border-radius:10px;padding:10px 6px;font-size:20px;font-weight:900;text-decoration:underline;margin:16px 0 10px}
+.cards{grid-template-columns:repeat(2,minmax(0,1fr));gap:7px}
+.market{border:2px solid #bd1b5d;border-radius:4px;padding:11px 9px;background:#fff;color:#202b3a;box-shadow:none;text-align:center}
+.market.active{border:3px solid #ffbf00;padding:10px 8px;background:#fff7bd}
+.market .name{font-size:14px;font-style:italic;font-weight:900}.market .sub{font-size:11px}
+.panel{margin-top:16px;border:3px solid #f0a900;border-radius:12px;box-shadow:none;background:#fff;color:#172337}
+.panel-head{background:#fff;padding:14px 11px}.panel-head h2{font-size:23px;font-weight:900;font-style:italic;color:#bf124a}
+.controls{width:100%}.search{width:100%;flex:1}.tabs{padding:9px;gap:5px;flex-wrap:wrap}
+.tab{border:1px solid #b51d60;border-radius:5px;padding:8px 10px;font-size:12px;color:#5b1640}
+.tab.active{background:#c10d52;border-color:#c10d52;color:#fff}
+.summary{padding:8px;gap:5px}.pill{font:11px/1.4 system-ui,sans-serif;padding:4px 7px}
+.table-wrap{max-height:70vh;background:#fff}
+.weekly-chart th{background:#ffc400!important;color:#161616!important;border:1px solid #b77a16!important}
+.weekly-chart .week-date{background:#ffd4ad!important}.weekly-chart .jodi-line{color:#d71920!important}
+.go-top-wrap{text-align:center;margin:12px 0}.go-top{display:inline-block;background:linear-gradient(#ffdf18,#ff9d00);color:#181000;border:2px solid #e4a300;border-radius:999px;padding:9px 20px;font-weight:900;text-decoration:none}
+.notice{background:#fff8d9;border:2px solid #e8b000;border-radius:8px;color:#4a3914;font:12px/1.5 system-ui,sans-serif}
+.foot{color:#f9d45b;font:12px/1.5 system-ui,sans-serif}
+.quick-links{margin:18px 0 12px;border:3px solid #a81755;border-radius:15px;overflow:hidden;background:#fff;color:#253042}
+.quick-links h2{margin:0;background:linear-gradient(90deg,#d30b55,#a90e64);color:#fff;text-align:center;padding:12px;font-size:21px;font-style:italic;letter-spacing:1px}
+.quick-links-list{display:grid;grid-template-columns:1fr}
+.quick-links-list button{border:0;border-top:2px solid #b51d60;background:#fff;color:#273141;padding:11px 8px;font-size:17px;font-weight:900;font-style:italic;text-align:center}
+@media(min-width:650px){.cards{grid-template-columns:repeat(4,minmax(0,1fr))}.quick-links-list{grid-template-columns:repeat(2,minmax(0,1fr))}.quick-links-list button:nth-child(even){border-left:2px solid #b51d60}}
+@media(max-width:380px){.brand-copy h1{font-size:30px}.today-number{font-size:23px}.market .name{font-size:13px}.panel-head h2{font-size:20px}}
+
+/* Market result cards with direct Jodi/Panel navigation and hours */
+.market{position:relative;padding:12px 9px 10px!important;text-align:center!important}
+.market .arrow{display:none}
+.market .market-timing{display:block;font-size:11px;font-weight:800;color:#b20e42;margin-top:5px;line-height:1.3}
+.market .market-actions{display:flex;gap:6px;margin-top:9px}
+.market .market-actions button{flex:1;min-width:0;border:1px solid #b30b3e;border-radius:6px;padding:7px 2px;background:linear-gradient(#ff5252,#d60025);color:#fff;font-weight:900;font-style:italic;font-size:12px;box-shadow:0 2px 3px #0003;cursor:pointer}
+.market .market-actions button[data-view="jodi"]{background:linear-gradient(#fff,#e8efff);color:#153aa7;border-color:#153aa7}
+.market .market-actions button:active{transform:scale(.97)}
+.today-item{position:relative;padding:12px 8px 10px}
+.today-timing{margin-top:4px;font-size:13px;font-weight:900;font-style:italic;color:#bd123d}
+.today-actions{display:flex;justify-content:center;gap:12px;margin:9px auto 0;max-width:300px}
+.refresh-site{display:block;margin:8px auto 0;border:2px solid #1437b4;border-radius:22px;padding:7px 15px;background:linear-gradient(#fff,#e7edff);color:#1437b4;font-size:14px;font-weight:900;box-shadow:0 2px 4px #0003}
+.today-actions button{flex:1;border:2px solid #a90b2f;border-radius:7px;padding:8px 6px;background:linear-gradient(#ff4b4b,#d40022);color:white;font-size:14px;font-weight:900;font-style:italic;box-shadow:0 2px 4px #0003}
+.today-actions button[data-view="jodi"]{background:linear-gradient(#fff,#e7edff);color:#1437b4;border-color:#1437b4}
+
+.quick-links-top{display:flex;justify-content:center;margin:14px 0 18px}
+.quick-links-top a{display:inline-block;background:linear-gradient(#ffdf18,#ff9d00);color:#181000;border:3px solid #e4a300;border-radius:999px;padding:11px 24px;font-weight:900;font-size:17px;text-decoration:none;box-shadow:0 4px 10px #0005}
+
+.quick-links-go-top{margin:14px 0 18px}
+.quick-link-item{background:#fff;color:#253042;border-top:2px solid #b51d60;text-align:center;padding:12px 8px}
+.quick-link-name{font-size:clamp(16px,4.4vw,21px);font-weight:900;font-style:italic}
+.quick-link-time{margin-top:4px;color:#b20e42;font:800 12px/1.4 system-ui,sans-serif}
+.quick-link-actions{display:flex;justify-content:center;gap:12px;margin:9px auto 0;max-width:260px}
+.quick-link-actions button{flex:1;border:1px solid #b30b3e;border-radius:6px;padding:8px 4px;background:linear-gradient(#ff5252,#d60025);color:#fff;font-weight:900;font-style:italic;box-shadow:0 2px 3px #0003}
+.quick-link-actions button[data-view="jodi"]{background:linear-gradient(#fff,#e8efff);color:#153aa7;border-color:#153aa7}
+
+.today-item{background:linear-gradient(180deg,#fffdf4,#fff);padding:15px 8px 13px;border-bottom:3px solid #ffbf00}.today-name{font-size:clamp(20px,5.2vw,28px)!important;font-weight:1000!important;color:#075d18!important;text-shadow:1px 2px 1px #d0d0d0!important;letter-spacing:.2px}.today-item:nth-child(even) .today-name{color:#b20c27!important}.today-item:nth-child(3n) .today-name{color:#123fc5!important}.today-item:nth-child(4n) .today-name{color:#a20e79!important}.today-number{font-size:clamp(25px,6vw,34px)!important;color:#050505!important;font-weight:1000!important;text-shadow:1px 2px 2px #bbb!important}.today-timing{font-size:clamp(12px,3.5vw,15px)!important;color:#c10d36!important;font-weight:1000!important}.today-actions button{min-height:42px;font-size:15px}#tableArea{scroll-margin-top:12px}.panel{scroll-margin-top:12px}.chart-title-band{font-size:clamp(20px,5vw,28px)!important;padding:12px 5px!important}.go-bottom-wrap{position:sticky;top:0;z-index:4}.quick-link-item{padding:13px 8px}.quick-link-name{font-size:clamp(17px,4.6vw,23px);color:#182b53;font-weight:1000}
+
+/* Compact, mobile-friendly chart controls */
+.panel-head{padding:10px 12px!important;gap:8px!important;display:block!important}.panel-head h2{font-size:19px!important;line-height:1.2;margin:0!important}.panel-head p{font-size:12px!important;margin:2px 0 7px!important}.controls{display:grid!important;grid-template-columns:minmax(0,1fr) 105px;gap:7px!important;width:100%}.controls .field{min-height:38px!important;padding:7px 9px!important;font-size:14px!important}.controls .search{width:100%!important;min-width:0}.tabs{padding:7px 9px!important;gap:5px!important;flex-wrap:wrap!important;overflow:visible!important}.tab{padding:7px 10px!important;font-size:13px!important}.summary{padding:7px 9px!important;gap:5px!important}.pill{font-size:10px!important;padding:4px 7px!important}.chart-title-band{padding:8px 4px!important}.go-bottom-wrap{padding:7px!important}.go-bottom{padding:8px 18px!important;font-size:14px!important}.chart-hint{padding:6px 9px!important;font-size:11px!important}
+
+/* Keep chart selector below the main chart to avoid duplicating choices near live results */
+.section-title{margin:22px 0 10px!important}.cards{margin-bottom:18px}
+
+/* Keep exactly one Go to Top control below the market cards */
+.quick-links-go-top{margin:18px auto 22px!important}.quick-links-go-top .go-top{display:inline-flex;align-items:center;justify-content:center}
+
+.chart-go-top{display:flex;justify-content:center;padding:10px 0 14px;background:#fff}.chart-go-top .go-top{font-size:14px;padding:8px 18px}.summary{padding:5px 9px!important;min-height:0!important}.summary .pill{font-size:11px!important}
+
+#sourceNote{display:none!important}
+
+.search-controls{display:grid!important;grid-template-columns:minmax(0,1fr) minmax(0,.8fr) minmax(90px,.65fr)!important;gap:8px!important;align-items:end!important}.search-field{display:flex;flex-direction:column;gap:4px;min-width:0;font-size:12px;font-weight:800;color:#7b1747}.search-field .field{width:100%;min-width:0;box-sizing:border-box;padding:9px 8px!important;font-size:15px!important}.search-field span{padding-left:2px}@media(max-width:420px){.search-controls{grid-template-columns:minmax(0,1fr) minmax(0,.85fr) minmax(0,.8fr)!important;gap:5px!important}.year-field{grid-column:auto}.search-field{font-size:10px!important}.search-field .field{min-height:40px;padding:8px 5px!important;font-size:12px!important}}
+
+/* Full-chart coverage: use the available screen width, larger readable cells,
+   and avoid horizontal scrolling on phones whenever possible. */
+#chartPanel{width:100%;max-width:none}
+#chartPanel .table-wrap{width:100%;overflow-x:auto;overflow-y:visible;max-height:none}
+.weekly-chart{width:100%!important;max-width:100%!important;min-width:0!important;table-layout:fixed!important;border-spacing:1px!important}
+.weekly-chart col.date-col{width:clamp(42px,5vw,64px)!important}
+.weekly-chart th{padding:6px 1px!important;font-size:clamp(8px,1vw,11px)!important}
+.weekly-chart .week-date{width:clamp(42px,5vw,64px)!important;min-width:0!important;max-width:none!important;font-size:clamp(8px,1vw,11px)!important;padding:3px 1px!important;overflow-wrap:anywhere}
+.weekly-chart .day-cell{height:clamp(48px,6.2vw,78px)!important;min-width:0!important;width:auto!important}
+.weekly-chart .result-grid{grid-template-columns:minmax(0,1fr) minmax(0,1.25fr) minmax(0,1fr)!important}
+.weekly-chart .digit-stack span{font-size:clamp(8px,1.1vw,12px)!important}
+.weekly-chart .jodi-center strong{font-size:clamp(11px,1.5vw,17px)!important}
+.weekly-chart .jodi-only{font-size:clamp(11px,1.6vw,17px)!important}
+.weekly-chart .result-grid,.weekly-chart .digit-stack{min-width:0!important}
+@media(max-width:600px){
+ .wrap{padding-left:8px!important;padding-right:8px!important}
+ #chartPanel{margin-left:-2px;margin-right:-2px;width:calc(100% + 4px)}
+ #chartPanel .panel-head{padding:10px!important}
+ #chartPanel .summary{padding:8px 10px!important}
+ #chartPanel .table-wrap{padding:0 2px 4px!important;overflow-x:hidden!important}
+ .weekly-chart{width:100%!important;min-width:0!important;table-layout:fixed!important;border-spacing:1px!important}
+ .weekly-chart col.date-col{width:38px!important}
+ .weekly-chart th{font-size:7px!important;padding:5px 0!important;letter-spacing:0!important}
+ .weekly-chart .week-date{width:38px!important;min-width:0!important;max-width:none!important;font-size:7px!important;line-height:1.1!important;padding:2px 0!important;overflow-wrap:anywhere}
+ .weekly-chart .day-cell{height:50px!important;min-width:0!important}
+ .weekly-chart .result-grid{grid-template-columns:minmax(0,1fr) minmax(0,1.15fr) minmax(0,1fr)!important}
+ .weekly-chart .digit-stack span{font-size:7px!important;line-height:1!important}
+ .weekly-chart .jodi-center strong{font-size:10px!important;line-height:1!important}
+ .weekly-chart .jodi-only{font-size:11px!important}
+ .weekly-chart .pending{font-size:7px!important}
+ .chart-title-band{font-size:13px!important;padding:8px 3px!important}
+ .chart-hint{font-size:11px!important;padding:7px 8px!important}
+}
+@media(min-width:1000px){
+ .wrap{max-width:1500px!important}
+ #chartPanel .table-wrap{overflow-x:hidden}
+ .weekly-chart .day-cell{height:76px!important}
+}
+
+/* Restore large, easy-to-read chart numbers on mobile and desktop */
+.weekly-chart .digit-stack span{font-size:clamp(12px,1.45vw,16px)!important;line-height:1.08!important;font-weight:900!important}
+.weekly-chart .jodi-center strong{font-size:clamp(15px,2vw,21px)!important;line-height:1.05!important;font-weight:1000!important}
+.weekly-chart .jodi-only{font-size:clamp(17px,2.2vw,23px)!important;line-height:1.1!important;font-weight:1000!important}
+.weekly-chart .pending{font-size:12px!important}
+@media(max-width:600px){
+ .weekly-chart .digit-stack span{font-size:clamp(11px,3.2vw,15px)!important;line-height:1.08!important}
+ .weekly-chart .jodi-center strong{font-size:clamp(14px,4vw,18px)!important;line-height:1.05!important}
+ .weekly-chart .jodi-only{font-size:clamp(17px,4.5vw,21px)!important;line-height:1.1!important}
+ .weekly-chart .pending{font-size:11px!important}
+ .weekly-chart .day-cell{height:56px!important}
+}
+</style>
+</head>
+<body>
+<header class="top" id="top"><div class="wrap">
+<div class="brand">
+<a class="brand-logo" href="#top" aria-label="DP 777 home">
+<svg viewBox="0 0 64 64" role="img" aria-label="DP 777 crown logo"><defs><linearGradient id="gold" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#fff2a8"/><stop offset=".45" stop-color="#ffc928"/><stop offset="1" stop-color="#d88a00"/></linearGradient></defs><path d="M8 48h48l-4 8H12z" fill="url(#gold)"/><path d="M10 43 5 18l15 12L31 6l11 24 17-12-5 25z" fill="url(#gold)" stroke="#fff1a6" stroke-width="2" stroke-linejoin="round"/><circle cx="5" cy="16" r="4" fill="#fff2a8"/><circle cx="31" cy="5" r="4" fill="#fff2a8"/><circle cx="59" cy="16" r="4" fill="#fff2a8"/><path d="M15 36h34v6H15z" fill="#fff2a8"/></svg>
+</a><div class="brand-copy"><h1><span>DP</span> <strong>777</strong></h1><p>MATKA RESULTS &amp; CHARTS</p></div></div>
+<div class="live"><span>Historical charts and published results</span><span id="updated">Checking latest data…</span></div>
+</div></header>
+<main class="wrap main">
+<section class="today-panel" aria-label="Latest published results above chart"><div class="today-heading">◔ UPDATED RESULTS</div><div id="todayResults" class="today-results"><div class="today-loading">Checking published results…</div></div></section>
+<section class="panel" id="chartPanel" aria-label="Chart records">
+<div class="panel-head"><div><h2 id="chartTitle">Time Bazar</h2><p id="chartDesc">Weekly historical records</p></div><div class="controls search-controls"><label class="search-field"><span>Number / Jodi</span><input id="search" class="field search" type="search" placeholder="e.g. 23+1" aria-label="Search Jodi number or target+offset"></label><label class="search-field"><span>Day</span><select id="daySearch" class="field"><option value="all">All days</option><option value="Mon">Monday</option><option value="Tue">Tuesday</option><option value="Wed">Wednesday</option><option value="Thu">Thursday</option><option value="Fri">Friday</option><option value="Sat">Saturday</option><option value="Sun">Sunday</option></select></label><label class="search-field year-field"><span>Year</span><select id="year" class="field" aria-label="Filter by year"><option value="all">All years</option></select></label></div></div>
+<div class="tabs"><button class="tab active" data-view="jodi">Jodi Chart</button><button class="tab" data-view="panel">Panel Chart</button><button class="tab" data-view="guess">Guess Chart</button></div>
+<div class="summary"><span class="pill" id="count">0 records</span><span class="pill" id="targetStats" hidden></span></div>
+<div id="tableArea" class="table-wrap"><div class="empty"><strong>Loading chart records…</strong>Please wait while the latest published data is loaded.</div></div>
+<div class="go-top-wrap chart-go-top"><a class="go-top" href="#chartPanel">↑ Go to Chart Top</a></div>
+</section>
+<h2 class="section-title">Choose a chart</h2>
+<div class="cards" id="markets"></div>
+<div class="go-top-wrap quick-links-go-top"><a class="go-top" href="#top">↑ Go to Top</a></div><section class="quick-links" aria-label="Quick chart links"><h2>QUICK LINKS</h2><div class="quick-links-list"><div class="quick-link-item"><div class="quick-link-name">Sridevi Night Chart</div><div class="quick-link-time">7:30 PM – 8:30 PM</div><div class="quick-link-actions"><button type="button" data-market="sridevi-night" data-view="jodi">Jodi</button><button type="button" data-market="sridevi-night" data-view="panel">Panel</button></div></div><div class="quick-link-item"><div class="quick-link-name">Sridevi Chart</div><div class="quick-link-time">11:25 AM – 12:25 PM</div><div class="quick-link-actions"><button type="button" data-market="sridevi" data-view="jodi">Jodi</button><button type="button" data-market="sridevi" data-view="panel">Panel</button></div></div><div class="quick-link-item"><div class="quick-link-name">Time Bazar Panel Chart</div><div class="quick-link-time">1:00 PM – 2:00 PM</div><div class="quick-link-actions"><button type="button" data-market="time-bazar" data-view="jodi">Jodi</button><button type="button" data-market="time-bazar" data-view="panel">Panel</button></div></div><div class="quick-link-item"><div class="quick-link-name">Milan Day Panel Chart</div><div class="quick-link-time">3:00 PM – 5:00 PM</div><div class="quick-link-actions"><button type="button" data-market="milan-day" data-view="jodi">Jodi</button><button type="button" data-market="milan-day" data-view="panel">Panel</button></div></div><div class="quick-link-item"><div class="quick-link-name">Kalyan Panel Chart</div><div class="quick-link-time">3:45 PM – 5:45 PM</div><div class="quick-link-actions"><button type="button" data-market="kalyan" data-view="jodi">Jodi</button><button type="button" data-market="kalyan" data-view="panel">Panel</button></div></div><div class="quick-link-item"><div class="quick-link-name">Milan Night Panel Chart</div><div class="quick-link-time">8:55 PM – 10:55 PM</div><div class="quick-link-actions"><button type="button" data-market="milan-night" data-view="jodi">Jodi</button><button type="button" data-market="milan-night" data-view="panel">Panel</button></div></div><div class="quick-link-item"><div class="quick-link-name">Rajdhani Night Panel Chart</div><div class="quick-link-time">9:20 PM – 11:30 PM</div><div class="quick-link-actions"><button type="button" data-market="rajdhani-night" data-view="jodi">Jodi</button><button type="button" data-market="rajdhani-night" data-view="panel">Panel</button></div></div><div class="quick-link-item"><div class="quick-link-name">Main Bazar Panel Chart</div><div class="quick-link-time">9:50 PM – 11:58 PM</div><div class="quick-link-actions"><button type="button" data-market="main-bazar" data-view="jodi">Jodi</button><button type="button" data-market="main-bazar" data-view="panel">Panel</button></div></div></div></section>
+<section class="today-panel bottom-results" aria-label="Latest published results below chart"><div class="today-heading">◔ UPDATED RESULTS</div><div id="todayResultsBottom" class="today-results"><div class="today-loading">Checking published results…</div></div></section>
+<div class="notice"><strong>Important:</strong> DP 777 displays historical/publicly published results for reference only. Past results do not predict future outcomes. This site does not accept bets or provide winning-number predictions. Follow applicable local laws.</div>
+<footer class="foot"><span>DP 777 · Historical chart archive</span><span id="sourceNote">Data source and last update shown when available.</span></footer>
+</main>
+<script>
+const DATA_URLS=['data/results.json','https://cdn.jsdelivr.net/gh/raghucse99-collab/sulabham@main/dp777/data/results.json','https://raw.githubusercontent.com/raghucse99-collab/sulabham/main/dp777/data/results.json'];
+const LIVE_DATA_URLS=['https://raw.githubusercontent.com/raghucse99-collab/sulabham/main/dp777/data/latest_results.json','https://cdn.jsdelivr.net/gh/raghucse99-collab/sulabham@main/dp777/data/latest_results.json'];
+let liveData={latest_results:{},live_fetched_at:null,live_source:'https://dpbossg.mobi/',live_status:'loading'};
+function chartKeyFor(id){return id==='sridevi'?'sridevi-day':id==='sridevi-night'?'sridevi':id;}
+const markets=[
+ {id:'sridevi',name:'Sridevi',url:'https://khabar.bet/sridevi-matka-chart',open:'11:25',close:'12:25'},
+ {id:'time-bazar',name:'Time Bazar',url:'https://khabar.bet/time-bazar-matka-chart',open:'13:00',close:'14:00'},
+ {id:'milan-day',name:'Milan Day',url:'https://khabar.bet/milan-day-matka-chart',open:'15:00',close:'17:00'},
+ {id:'milan-day-archive',name:'Milan Day Archive 1992–2026',url:'https://khabar.bet/milan-day-matka-chart',open:'',close:''},
+ {id:'rajdhani-day',name:'Rajdhani Day',url:'https://khabar.bet/rajdhani-day-matka-chart',open:'15:15',close:'17:15'},
+ {id:'kalyan',name:'Kalyan',url:'https://khabar.bet/kalyan-matka-chart',open:'15:45',close:'17:45'},
+ {id:'sridevi-night',name:'Sridevi Night',url:'https://khabar.bet/sridevi-night-matka-chart',open:'19:30',close:'20:30'},
+ {id:'milan-night',name:'Milan Night',url:'https://khabar.bet/milan-night-matka-chart',open:'20:55',close:'22:55'},
+ {id:'kalyan-night',name:'Kalyan Night',url:'https://khabar.bet/kalyan-night-matka-chart',open:'21:20',close:'23:20'},
+ {id:'rajdhani-night',name:'Rajdhani Night',url:'https://khabar.bet/rajdhani-night-matka-chart',open:'21:20',close:'23:30'},
+ {id:'main-bazar',name:'Main Bazar',url:'https://khabar.bet/main-bazar-matka-chart',open:'21:50',close:'23:58'},
+];
+let data={charts:{},updated_at:null},selected=markets[0].id,view='jodi',dataLoadFailed=false;
+const $=id=>document.getElementById(id);
+function esc(s){return String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));}
+function isRedJodiValue(v){
+ const j=String(v??'');
+ return /^\\d{2}$/.test(j)&&(j[0]===j[1]||Math.abs(Number(j[0])-Number(j[1]))===5);
+}
+function formatLatestResult(value){
+ if(/^OPEN:\\d{3}$/.test(String(value??''))) return 'OPEN '+esc(String(value).split(':')[1]);
+ const parts=String(value??'').split('-');
+ if(parts.length<2||parts.length>3) return esc(value);
+ const jodi=parts[1];
+ parts[1]=isRedJodiValue(jodi)?'<span class="today-jodi red-jodi">'+esc(jodi)+'</span>':'<span class="today-jodi">'+esc(jodi)+'</span>';
+ return parts.map((part,i)=>i===1?part:esc(part)).join('<span class="today-separator">-</span>');
+}
+function renderLatestResults(){
+ const targets=[$('todayResults'),$('todayResultsBottom')].filter(Boolean);
+ const latest=liveData.latest_results||{};
+ const source=liveData.live_source||'https://dpbossg.mobi/';
+ const fetched=liveData.live_fetched_at?new Date(liveData.live_fetched_at).toLocaleTimeString([], {hour:'2-digit',minute:'2-digit'}):'';
+ const resultMarkup=markets.filter(m=>m.showLive!==false).map(m=>{
+  const todayIndia = new Date(new Date().toLocaleString('en-US',{timeZone:'Asia/Kolkata'}));
+   const isSunday = todayIndia.getDay() === 0;
+   const noWeekendGame = isSunday && !['sridevi','sridevi-night'].includes(m.id);
+  const item=latest[m.id];
+  const valid=item&&(/^[0-9]{3}-[0-9]{1,2}(-[0-9]{3})?$/.test(String(item.result||''))||/^OPEN:[0-9]{3}$/.test(String(item.result||'')));
+  // Only show a result on the live tiles when its source post is dated today in India.
+  // A feed fetch timestamp alone does not prove that a scraped number is today's result.
+  // Compare explicit India-local date parts instead of relying on browser locale
+  // formatting (some Android browsers format en-CA dates differently).
+  const indiaDateKey=d=>{const parts=new Intl.DateTimeFormat('en-GB',{timeZone:'Asia/Kolkata',year:'numeric',month:'2-digit',day:'2-digit'}).formatToParts(d);const get=t=>parts.find(p=>p.type===t)?.value||'';return get('year')+'-'+get('month')+'-'+get('day');};
+  const telegramPostedToday=Boolean(item&&item.telegram_posted_at&&Number.isFinite(new Date(item.telegram_posted_at).getTime())&&indiaDateKey(new Date(item.telegram_posted_at))===indiaDateKey(new Date()));
+  const feedFetchedToday=Boolean(liveData.live_fetched_at&&Number.isFinite(new Date(liveData.live_fetched_at).getTime())&&indiaDateKey(new Date(liveData.live_fetched_at))===indiaDateKey(new Date()));
+  // Telegram values need their own post timestamp. Results from the live-board
+  // scraper are tied to the current successful feed fetch instead.
+  const publishedToday=String(item?.source||'').startsWith('https://t.me/')?telegramPostedToday:feedFetchedToday;
+  const indiaNow=new Date(new Date().toLocaleString('en-US',{timeZone:'Asia/Kolkata'}));
+  const minutesNow=indiaNow.getHours()*60+indiaNow.getMinutes();
+  const toMinutes=t=>{if(!t)return null;const p=t.split(':').map(Number);return p[0]*60+p[1];};
+  const openAt=toMinutes(m.open),closeAt=toMinutes(m.close);
+  const inMarketWindow=openAt!==null&&closeAt!==null&&(closeAt>=openAt?(minutesNow>=openAt&&minutesNow<=closeAt):(minutesNow>=openAt||minutesNow<=closeAt));
+  // The source may publish OPEN before the scheduled close time. Display any
+  // valid value from today's successful DPBOSS fetch immediately; do not gate
+  // OPEN values on the market clock. The scraper must return only the live card.
+  const showResult=Boolean(valid)&&publishedToday&&!noWeekendGame;
+  const value=noWeekendGame?'No Game Today':(showResult?formatLatestResult(item.result):(inMarketWindow?'Updating result…':(liveData.live_status==='error'?'Live feed temporarily unavailable':'Not published yet')));
+  const cls=showResult?'today-number':'today-number today-wait';
+  const timing=m.open&&m.close?m.open+' – '+m.close:'Timing not listed';
+  const refreshButton=inMarketWindow&&!noWeekendGame?'<button type="button" class="refresh-site" data-refresh-site="1">↻ Refresh site</button>':'';
+  return '<div class="today-item"><div class="today-name">'+esc(m.name)+'</div><div class="'+cls+'">'+value+'</div><div class="today-timing">'+esc(timing)+'</div>'+refreshButton+'<div class="today-actions"><button type="button" data-market="'+m.id+'" data-view="jodi">Jodi</button><button type="button" data-market="'+m.id+'" data-view="panel">Panel</button></div></div>';
+ }).join('');
+ targets.forEach(target=>{target.innerHTML=resultMarkup;target.querySelectorAll('.today-actions button').forEach(b=>b.addEventListener('click',()=>openMarketChart(b.dataset.market,b.dataset.view)));target.querySelectorAll('[data-refresh-site]').forEach(b=>b.addEventListener('click',()=>window.location.reload()));});
+}
+function renderMarkets(){
+ $('markets').innerHTML=markets.map(m=>{
+  const timing=m.open&&m.close?m.open+' – '+m.close:'Timing not listed';
+  return '<div class="market '+(m.id===selected?'active':'')+'" data-id="'+m.id+'"><span class="name">'+esc(m.name)+'</span><span class="sub">'+(data.charts?.[chartKeyFor(m.id)]?.rows?.length?'Historical records':'Chart data pending')+'</span><span class="market-timing">'+esc(timing)+'</span><div class="market-actions"><button type="button" data-market="'+m.id+'" data-view="jodi">Jodi</button><button type="button" data-market="'+m.id+'" data-view="panel">Panel</button></div></div>';
+ }).join('');
+ document.querySelectorAll('.market-actions button').forEach(b=>b.addEventListener('click',()=>{
+  selected=b.dataset.market;view=b.dataset.view;
+  document.querySelectorAll('.tab').forEach(t=>t.classList.toggle('active',t.dataset.view===view));
+  renderMarkets();renderChart();load();
+  document.querySelector('.panel').scrollIntoView({behavior:'smooth',block:'start'});
+ }));
+}
+function rowsFor(){let c=data.charts?.[chartKeyFor(selected)];return Array.isArray(c?.rows)?c.rows:[];}
+function targetJodiSearch(rows, query){
+ const match=String(query||'').trim().match(/^(\d{1,2})\s*\+\s*(\d{1,2})$/);
+ if(!match)return null;
+ const target=String(Number(match[1])).padStart(2,'0'), offset=Number(match[2]);
+ if(offset<1)return {error:'Offset must be 1 or greater.'};
+ const days=['Mon','Tue','Wed','Thu','Fri','Sat','Sun'];
+ const hasTarget=row=>days.some(day=>String(row[day+' Jodi']??'').trim().padStart(2,'0')===target);
+ const targetIndexes=[];
+ rows.forEach((row,i)=>{if(hasTarget(row))targetIndexes.push(i);});
+ const selected=new Set();
+ // Each target row is excluded. Select the Nth row below it. If that selected
+ // row also contains the target, continue the chain at the same offset.
+ for(const start of targetIndexes){
+  let current=start, seen=new Set();
+  while(hasTarget(rows[current])&&!seen.has(current)){
+   seen.add(current);
+   const next=current+offset;
+   if(next>=rows.length)break;
+   selected.add(next);
+   if(!hasTarget(rows[next]))break;
+   current=next;
+  }
+ }
+ return {target,offset,targetIndexes,selectedIndexes:[...selected].sort((a,b)=>a-b)};
+}
+function matchesChartSearch(row,query){
+ const q=String(query||'').trim().toLowerCase().replace(/\s+/g,'');
+ const day=$('daySearch')?.value||'all';
+ if(day!=='all'){
+  const value=String(row[day+' Jodi']??'').trim().toLowerCase().replace(/\s+/g,'');
+  return !q||value===q;
+ }
+ if(!q)return true;
+ if(/^\d{1,3}$/.test(q))return ['Mon','Tue','Wed','Thu','Fri','Sat','Sun'].some(d=>String(row[d+' Jodi']??'').trim()===q);
+ return JSON.stringify(row).toLowerCase().includes(q);
+}
+function renderChart(){
+ const stats=$('targetStats');
+ if(dataLoadFailed&&!data.charts?.[chartKeyFor(selected)]){
+  $('count').textContent='Data unavailable';stats.hidden=true;
+  $('tableArea').innerHTML='<div class="empty"><strong>Chart data could not be loaded.</strong>The selected market feed did not respond. The page will retry automatically; you can also open the original source below.</div>';return;
+ }
+ let m=markets.find(x=>x.id===selected),c=data.charts?.[chartKeyFor(selected)]||{};
+ $('chartTitle').textContent=m.name;$('chartDesc').textContent=c.title||'Weekly historical records';$('sourceNote').textContent='';
+ const allRows=rowsFor();
+ const targetSearch=targetJodiSearch(allRows,$('search').value);
+ const years=[...new Set(allRows.map(r=>String(r.date||'').match(/\b(?:19|20)\d{2}\b/)?.[0]).filter(Boolean))].sort().reverse();
+ const prev=$('year').value;
+ $('year').innerHTML='<option value="all">All years</option>'+years.map(y=>'<option value="'+y+'">'+y+'</option>').join('');
+ if(years.includes(prev))$('year').value=prev;
+ const yr=$('year').value, q=$('search').value.trim();
+ if(targetSearch){
+  if(targetSearch.error){
+   $('count').textContent='Invalid search';stats.hidden=true;
+   $('tableArea').innerHTML='<div class="empty"><strong>'+esc(targetSearch.error)+'</strong>Use a search such as 23+1, 23+2 or 23+3.</div>';return;
+  }
+  const picked=targetSearch.selectedIndexes.map(i=>allRows[i]).filter(r=>yr==='all'||String(r.date||'').includes(yr));
+  const targetCount=targetSearch.targetIndexes.filter(i=>yr==='all'||String(allRows[i].date||'').includes(yr)).length;
+  $('count').textContent=picked.length+' selected weeks';
+  stats.hidden=false;stats.textContent='Target '+targetSearch.target+' · target weeks '+targetCount+' · unique selected weeks '+picked.length;
+  if(view==='source'||view==='guess')view='jodi';
+  $('tableArea').innerHTML=picked.length?'<div class="chart-title-band">'+esc(m.name.toUpperCase())+' TARGET JODI SEARCH</div><div class="chart-hint">Target '+esc(targetSearch.target)+' · offset +'+targetSearch.offset+' · Jodi numbers only · Monday–Sunday order preserved.</div>'+renderWeeklyChart(picked,'jodi'):'<div class="empty"><strong>No weeks selected.</strong>No target matches or no following rows were available for this offset.</div>';
+  return;
+ }
+ stats.hidden=true;
+ const rows=allRows.filter(r=>(yr==='all'||String(r.date||'').includes(yr))&&matchesChartSearch(r,q));
+ $('count').textContent=rows.length+' records';
+ if(view==='source'){$('tableArea').innerHTML='<div class="empty"><strong>Original source chart</strong><a class="source" href="'+m.url+'" target="_blank" rel="noopener">Open '+esc(m.name)+' original chart ↗</a><p>Source page opens separately.</p></div>';return;}
+ if(view==='guess'){$('tableArea').innerHTML='<div class="empty"><strong>Guess Chart</strong>This archive focuses on published historical results and does not generate predictions.<p><a class="source" href="'+m.url+'" target="_blank" rel="noopener">Open original chart page ↗</a></p></div>';return;}
+ if(rows.length && Object.keys(rows[0]).some(k=>/^(Mon|Tue|Wed|Thu|Fri|Sat|Sun) (Open|Jodi|Close|Panel|result)$/i.test(k))){
+  const jodiOnly=Object.keys(rows[0]).some(k=>/^(Mon|Tue|Wed|Thu|Fri|Sat|Sun) Jodi$/i.test(k))&&!Object.keys(rows[0]).some(k=>/^(Mon|Tue|Wed|Thu|Fri|Sat|Sun) (Open|Close)$/i.test(k));
+  $('tableArea').innerHTML='<div class="chart-title-band">'+esc(m.name.toUpperCase())+(jodiOnly?'':' PANEL')+' CHART</div><div class="go-bottom-wrap"><button type="button" class="go-bottom" id="goBottom">Go to Bottom</button></div><div class="chart-hint">'+(jodiOnly?'Date-wise archive · Monday to Sunday · Original two-digit results preserved.':'')+'</div>'+renderWeeklyChart(rows,jodiOnly?'jodi':view);
+  $('goBottom').addEventListener('click',()=>{const area=$('tableArea');const last=area.querySelector('tbody tr:last-child')||area;last.scrollIntoView({behavior:"smooth",block:"end"});});return;
+ }
+ if(!rows.length){$('tableArea').innerHTML='<div class="empty"><strong>Historical records are not available in the local archive yet.</strong>The chart feed has not populated this market, so results are not being guessed.<p><a class="source" href="'+m.url+'" target="_blank" rel="noopener">Open original '+esc(m.name)+' chart ↗</a></p></div>';return;}
+ let keys=Object.keys(rows[0]).filter(k=>k!=='date'&&k!=='week');if(view==='jodi'){const jk=keys.filter(k=>/jodi/i.test(k));if(jk.length)keys=jk;}const cols=['date',...keys];$('tableArea').innerHTML='<table><thead><tr>'+cols.map(k=>'<th>'+esc(k==='date'?'Date / Week':k)+'</th>').join('')+'</tr></thead><tbody>'+rows.map(r=>'<tr>'+cols.map(k=>{let val=r[k]??'';let jodi=/jodi/i.test(k);return '<td class="'+(jodi?'cell-jodi':'')+'">'+esc(val||'—')+'</td>';}).join('')+'</tr>').join('')+'</tbody></table>';
+}
+function renderWeeklyChart(rows,mode='panel'){
+ const days=['Mon','Tue','Wed','Thu','Fri','Sat','Sun'],sample=rows[0]||{};
+ const present=days.filter(d=>Object.keys(sample).some(k=>k.startsWith(d+' ')));
+ const suspectDays=new Set();
+ for(let i=1;i<days.length;i++){
+  const prevDay=days[i-1],day=days[i];let comparable=0,same=0;
+  for(const row of rows){
+   const a=[prevDay+' Open',prevDay+' Jodi',prevDay+' Close'].map(k=>String(row[k]??'').trim());
+   const b=[day+' Open',day+' Jodi',day+' Close'].map(k=>String(row[k]??'').trim());
+   const valid=xs=>xs.every(v=>v!==''&&!/^\*+$/.test(v));
+   if(valid(a)&&valid(b)){comparable++;if(a.every((v,j)=>v===b[j]))same++;}
+  }
+  if(comparable>=4&&same/comparable>=0.75)suspectDays.add(day);
+ }
+ const norm=v=>{v=String(v??'').trim();const compact=v.replace(/\s/g,'');return (!compact||/^\*+$/.test(compact)||/^[★☆—-]+$/.test(compact))?'★':v;};
+ const compactDate=v=>String(v||'').replace(/20(\d{2})/g,'$1').replace(/\s+to\s+/i,'<TO>');
+ const panelParts=v=>{v=String(v??'').trim();return /^\d{3}$/.test(v)?v.split(''):v==='★'?['★','★','★']:v.split('');};
+ const isRedJodi=v=>/^\d{2}$/.test(String(v))&&(String(v)[0]===String(v)[1]||Math.abs(Number(String(v)[0])-Number(String(v)[1]))===5);
+ let html='<table class="weekly-chart"><colgroup><col class="date-col">'+days.map(()=>'<col>').join('')+'</colgroup><thead><tr><th>Date</th>'+days.map(d=>'<th>'+d.toUpperCase()+'</th>').join('')+'</tr></thead><tbody>';
+ for(const r of rows){
+  // Hide a week only when every day is blank or marked with stars.
+  // Keep the entire week if even one published number exists.
+  // Decide using exactly the three values shown in each visible day cell.
+  // Ignore auxiliary Panel/result fields: they can contain stray data even when
+  // the displayed weekly line is entirely unpublished.
+  const hasAnyPublishedNumber=days.some(d=>['Open','Jodi','Close'].some(part=>{
+   const value=String(r[d+' '+part]??'').trim();
+   const compact=value.replace(/\s/g,'');
+   return compact!==''&&!/^(?:\*+|★+|☆+|—+|-+|N\/A)$/i.test(compact);
+  }));
+  if(!hasAnyPublishedNumber) continue;
+  const rawDate=String(r.date||'');
+  const date=compactDate(rawDate).split('<TO>').map(esc).join('<span class="date-to">to</span>');
+  const dateParts=[...rawDate.matchAll(/(\d{1,2})[-\/](\d{1,2})[-\/](\d{2,4})/g)].map(m=>{let y=Number(m[3]);if(y<100)y+=2000;return new Date(y,Number(m[2])-1,Number(m[1]));});
+  const today=new Date();today.setHours(0,0,0,0);
+  const containsToday=dateParts.length>=2&&today>=dateParts[0]&&today<=dateParts[1];
+  const todayDay=['Sun','Mon','Tue','Wed','Thu','Fri','Sat'][today.getDay()];
+  html+='<tr class="week-start"><td class="week-date">'+date+'</td>';
+  for(const d of days){
+   if(!present.includes(d)){html+='<td class="day-cell"><span class="pending">★</span></td>';continue;}
+   const raw=suspectDays.has(d)?['','','']:[r[d+' Open'],r[d+' Jodi'],r[d+' Close']].map(v=>String(v??'').trim());
+   const incompleteToday=containsToday&&d===todayDay&&raw.some(v=>!v||/^\*+$/.test(v));
+   const open=incompleteToday?'★':norm(raw[0]),jodi=incompleteToday?'★':norm(raw[1]),close=incompleteToday?'★':norm(raw[2]);
+   if(mode==='jodi') html+='<td class="day-cell jodi-only">'+(jodi==='★'?'<span class="pending">★</span>':'<strong class="jodi-line '+(isRedJodi(jodi)?'red-jodi':'')+'">'+esc(jodi)+'</strong>')+'</td>';
+   else {
+    const o=panelParts(open),c=panelParts(close);
+    html+='<td class="day-cell"><div class="result-grid"><div class="digit-stack open-digits"><span>'+esc(o[0]||'★')+'</span><span>'+esc(o[1]||'★')+'</span><span>'+esc(o[2]||'★')+'</span></div><div class="jodi-center">'+(jodi==='★'?'<span class="pending">★</span>':'<strong class="'+(isRedJodi(jodi)?'red-jodi':'')+'">'+esc(jodi)+'</strong>')+'</div><div class="digit-stack close-digits"><span>'+esc(c[0]||'★')+'</span><span>'+esc(c[1]||'★')+'</span><span>'+esc(c[2]||'★')+'</span></div></div></td>';
+   }
+  }
+  html+='</tr>';
+ }
+ return html+'</tbody></table>';
+}
+async function openMarketChart(target,chosenView){
+ if(!markets.some(m=>m.id===target))return;
+ selected=target;view=chosenView||'panel';
+ document.querySelectorAll('.tab').forEach(t=>t.classList.toggle('active',t.dataset.view===view));
+ renderMarkets();
+ const market=markets.find(m=>m.id===selected);
+ $('chartTitle').textContent=market.name;
+ $('chartDesc').textContent='Loading '+view+' chart…';
+ $('count').textContent='Loading…';
+ $('tableArea').innerHTML='<div class="empty"><strong>Loading '+esc(market.name)+' '+esc(view)+' chart…</strong>Please wait while the selected chart data loads.</div>';
+ document.querySelector('.panel').scrollIntoView({behavior:'auto',block:'start'});
+ await load();
+ document.querySelector('.panel').scrollIntoView({behavior:'auto',block:'start'});
+}
+document.querySelectorAll('.quick-links-list button').forEach(b=>b.addEventListener('click',()=>openMarketChart(b.dataset.market,b.dataset.view||'panel')));
+document.querySelectorAll('.today-actions button').forEach(b=>b.addEventListener('click',()=>openMarketChart(b.dataset.market,b.dataset.view)));
+document.querySelectorAll('.tab').forEach(t=>t.addEventListener('click',()=>{view=t.dataset.view;document.querySelectorAll('.tab').forEach(x=>x.classList.toggle('active',x===t));renderChart();}));
+$('search').addEventListener('input',renderChart);$('daySearch').addEventListener('change',renderChart);$('year').addEventListener('change',renderChart);
+async function fetchData(marketId=selected){
+ const key=chartKeyFor(marketId);
+ let lastError;
+ // Fetch a small per-market JSON file first, rather than requiring the full 1.8 MB archive.
+ const sources=['/sulabham/dp777/data/charts/'+encodeURIComponent(key)+'.json','https://raw.githubusercontent.com/raghucse99-collab/sulabham/main/dp777/data/charts/'+encodeURIComponent(key)+'.json',...DATA_URLS];
+ for(const base of sources){
+  const controller=new AbortController();const timeout=setTimeout(()=>controller.abort(),12000);
+  try{
+   const res=await fetch(base+(base.includes('?')?'&':'?')+'v='+Date.now(),{cache:'no-store',signal:controller.signal});
+   if(!res.ok)throw new Error('HTTP '+res.status+' from '+base);
+   const parsed=await res.json();
+   let normalized=parsed;
+   if(parsed&&parsed.rows&&Array.isArray(parsed.rows))normalized={updated_at:parsed.updated_at||null,charts:{[key]:parsed}};
+   if(!normalized||!normalized.charts||typeof normalized.charts!=='object'||!normalized.charts[key])throw new Error('invalid chart data for '+key);
+   return normalized;
+  }catch(e){lastError=e;console.warn('Chart feed failed:',base,e);}
+  finally{clearTimeout(timeout);}
+ }
+ throw lastError||new Error('data source unavailable');
+}
+async function refreshLiveResults(){
+ for(const base of LIVE_DATA_URLS){
+  const controller=new AbortController();const timeout=setTimeout(()=>controller.abort(),4000);
+  try{
+   const res=await fetch(base+'?v='+Date.now(),{cache:'no-store',signal:controller.signal});
+   if(!res.ok)throw new Error('HTTP '+res.status);
+   const parsed=await res.json();
+   if(!parsed||!parsed.latest_results||typeof parsed.latest_results!=='object')throw new Error('invalid live feed');
+   liveData=parsed;liveData.live_status=parsed.live_status||'ok';renderLatestResults();return;
+  }catch(e){/* Try the alternate CDN. */}
+  finally{clearTimeout(timeout);}
+ }
+ liveData.live_status='error';renderLatestResults();const status=$('updated');if(status&&!data.updated_at)status.textContent='Live results feed unavailable; historical data is checked separately.';
+}
+// Render the market navigation immediately; a slow or malformed data feed
+// must never leave the page looking completely blank.
+/* Start the historical-data request before optional UI rendering. This ensures a UI rendering error cannot leave the initial loading placeholder on screen forever. */
+load();
+try{renderMarkets();}catch(e){console.error('Market navigation render failed',e);}
+try{renderChart();}catch(e){console.error('Initial chart render failed',e);$('count').textContent='Chart loading';$('tableArea').innerHTML='<div class="empty"><strong>Chart view is recovering.</strong>Historical data is being loaded. Please refresh this page if it does not recover.</div>';}
+try{renderLatestResults();}catch(e){console.error('Live results render failed',e);}
+refreshLiveResults();setInterval(refreshLiveResults,30000);
+async function load(){
+ const requestedMarket=selected;
+ $('updated').textContent='Loading historical chart data…';
+ try{
+  const parsed=await fetchData(requestedMarket);
+  if(requestedMarket!==selected)return;
+  data={...data,updated_at:parsed.updated_at||data.updated_at,charts:{...(data.charts||{}),...parsed.charts}};
+  dataLoadFailed=false;
+  $('updated').textContent=data.updated_at?'Data last changed: '+new Date(data.updated_at).toLocaleString():'Historical data source has not populated records yet';
+ }catch(e){
+  console.error('Historical chart data failed to load',e);
+  dataLoadFailed=true;
+  $('updated').textContent='Could not load '+requestedMarket+' chart data. Retrying shortly.';
+ }
+ renderMarkets();renderChart();
+}
+// Keep the large historical archive separate from the small live results feed.
+setInterval(load,30000);
+
+</script>
+</body></html>

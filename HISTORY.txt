@@ -1,0 +1,392 @@
+c384e5e 2026-10-27 12:29:47 +0000 github-actions[bot] Refresh DP 777 live and historical results
+05d983d 2026-10-27 17:58:57 +0530 raghucse99-collab Keep saved results when duplicate weekly rows conflict
+9565ef6 2026-10-27 17:58:35 +0530 raghucse99-collab Deduplicate overlapping weekly rows in kalyan archive
+450038f 2026-10-27 17:58:22 +0530 raghucse99-collab Deduplicate overlapping weekly rows in rajdhani-day archive
+50ecf40 2026-10-27 17:58:16 +0530 raghucse99-collab Deduplicate overlapping weekly rows in milan-day archive
+d67c62c 2026-10-27 12:11:16 +0000 github-actions[bot] Refresh DP 777 live results
+d9e7784 2026-10-27 10:45:05 +0000 github-actions[bot] Refresh DP 777 live and historical results
+26cf7b1 2026-10-27 16:14:17 +0530 raghucse99-collab Preserve chart archives when automated refresh is partial
+4b0cdb9 2026-10-27 16:11:44 +0530 raghucse99-collab Restore missing Milan Night week from published record
+4ae4dad 2026-10-27 16:11:40 +0530 raghucse99-collab Restore missing Milan Day week from published record
+3a5414d 2026-10-27 10:38:47 +0000 github-actions[bot] Refresh DP 777 live and historical results
+7cb38ed 2026-10-27 16:07:54 +0530 raghucse99-collab Use MatkaOnline archive parser for Milan Day and Night
+8597c53 2026-10-27 10:19:25 +0000 github-actions[bot] Refresh DP 777 live and historical results
+4cf77b1 2026-10-27 15:48:51 +0530 raghucse99-collab Restore Milan Night Monday result after fixing archive merge
+2fb1c33 2026-10-27 15:48:48 +0530 raghucse99-collab Restore Milan Day Monday result after fixing archive merge
+acc4951 2026-10-27 15:48:40 +0530 raghucse99-collab Fix date and placeholder regexes so archive rows merge correctly
+19df742 2026-10-27 10:15:25 +0000 github-actions[bot] Refresh DP 777 live and historical results
+53457d9 2026-10-27 15:44:39 +0530 raghucse99-collab Recover historical archives from per-market backups before refresh
+e6ed950 2026-10-27 15:44:27 +0530 raghucse99-collab Restore Milan Night result for 26 October 2026
+cb1b939 2026-10-27 15:44:25 +0530 raghucse99-collab Restore Milan Day result for 26 October 2026
+6fa774d 2026-10-27 10:10:57 +0000 github-actions[bot] Refresh DP 777 live and historical results
+3b56798 2026-10-27 10:10:08 +0000 github-actions[bot] Refresh DP 777 live and historical results
+6f80332 2026-10-27 15:39:26 +0530 raghucse99-collab Correct placeholder matching in historical result merge
+90c9af8 2026-10-27 15:39:16 +0530 raghucse99-collab Preserve saved historical results when chart refresh returns blanks
+2bb0fa9 2026-10-27 15:26:11 +0530 raghucse99-collab Restore Milan Night result for 26 October 2026
+391d91f 2026-10-27 15:26:08 +0530 raghucse99-collab Restore Milan Day result for 26 October 2026
+76f5580 2026-10-27 09:29:27 +0000 github-actions[bot] Refresh DP 777 live and historical results
+fd4f916 2026-10-27 14:58:47 +0530 raghucse99-collab Merge duplicate overlapping weekly chart rows
+db40572 2026-10-27 08:58:59 +0000 github-actions[bot] Refresh DP 777 live results
+5f1bc23 2026-10-27 08:58:40 +0000 github-actions[bot] Refresh DP 777 live and historical results
+bede8e8 2026-10-27 14:28:05 +0530 raghucse99-collab Parse complete DPBOSS result cards instead of fragmented text nodes
+4c94f47 2026-10-27 14:27:55 +0530 raghucse99-collab Run live result refresh before optional historical scrape
+e95e929 2026-10-27 07:18:02 +0000 github-actions[bot] Refresh DP 777 live and historical results
+a0ab9d1 2026-10-27 12:47:18 +0530 raghucse99-collab Refresh DP 777 live feed every five minutes
+b1b0170 2026-10-27 12:44:14 +0530 raghucse99-collab Show live OPEN result as soon as today's feed publishes it
+6487648 2026-10-27 06:22:10 +0000 github-actions[bot] Refresh DP 777 live and historical results
+0a85d64 2026-10-27 06:08:24 +0000 github-actions[bot] Refresh DP 777 live results
+e29044a 2026-10-27 02:38:30 +0000 github-actions[bot] Refresh DP 777 live and historical results
+f9c24c2 2026-10-27 08:07:47 +0530 raghucse99-collab Connect live results updater to scheduled DP 777 refresh
+bfd88cd 2026-10-27 07:14:38 +0530 raghucse99-collab Fix stale live tiles before each market opens
+53c9c34 2026-10-27 00:56:38 +0000 github-actions[bot] Refresh DP 777 live results
+4ab2df8 2026-10-27 00:31:00 +0000 github-actions[bot] Refresh DP 777 historical charts
+c809585 2026-10-26 21:47:55 +0000 github-actions[bot] Refresh DP 777 live results
+022e1ca 2026-10-26 20:33:54 +0000 github-actions[bot] Refresh DP 777 historical charts
+e75c570 2026-10-26 17:26:04 +0000 github-actions[bot] Refresh DP 777 live results
+232897a 2026-10-26 17:08:08 +0000 github-actions[bot] Refresh DP 777 historical charts
+ac233bd 2026-10-26 22:37:15 +0530 raghucse99-collab Correct regex escaping in DPBOSS live scraper
+6333096 2026-10-26 22:37:05 +0530 raghucse99-collab Fix DPBOSS live result extraction by exact market headings
+73fceb8 2026-10-26 16:15:22 +0000 github-actions[bot] Refresh DP 777 live results
+18210ea 2026-10-26 16:15:03 +0000 github-actions[bot] Refresh DP 777 historical charts
+ec24bd8 2026-10-26 21:44:19 +0530 raghucse99-collab Fix Sridevi Night label matching on DPBOSS
+974382d 2026-10-26 16:09:52 +0000 github-actions[bot] Refresh DP 777 historical charts
+aeb3c02 2026-10-26 16:09:00 +0000 github-actions[bot] Refresh DP 777 live results
+a5d869f 2026-10-26 21:38:35 +0530 raghucse99-collab Correct Sridevi source card mapping
+567e61c 2026-10-26 15:46:54 +0000 github-actions[bot] Refresh DP 777 live results
+cb058a1 2026-10-26 15:46:34 +0000 github-actions[bot] Refresh DP 777 live results
+df452c5 2026-10-26 21:16:31 +0530 raghucse99-collab Trust current DPBOSS homepage values without legacy source filters
+4945651 2026-10-26 21:16:23 +0530 raghucse99-collab Disable Telegram overrides; use DPBOSS for all live results
+4e4da9e 2026-10-26 21:16:16 +0530 raghucse99-collab Use DPBOSS homepage as the live results source for all markets
+716fc22 2026-10-26 15:45:39 +0000 github-actions[bot] Refresh DP 777 live results
+a931a2e 2026-10-26 15:45:18 +0000 github-actions[bot] Refresh DP 777 historical charts
+a6cabaa 2026-10-26 21:14:25 +0530 raghucse99-collab Keep Sridevi morning on dedicated DPBOSS source
+7451550 2026-10-26 21:14:18 +0530 raghucse99-collab Read Sridevi morning from its DPBOSS homepage card
+d59ac86 2026-10-26 15:25:20 +0000 github-actions[bot] Refresh DP 777 live results
+80a4ce5 2026-10-26 15:24:52 +0000 github-actions[bot] Refresh DP 777 historical charts
+2495c38 2026-10-26 20:54:04 +0530 raghucse99-collab Restore newest Telegram post precedence for live results
+a1834dc 2026-10-26 15:22:21 +0000 github-actions[bot] Refresh DP 777 live results
+5d8928f 2026-10-26 15:21:59 +0000 github-actions[bot] Refresh DP 777 historical charts
+f3aa44a 2026-10-26 20:51:20 +0530 raghucse99-collab Fix Telegram ordering so newest market results win
+fe954e3 2026-10-26 14:41:21 +0000 github-actions[bot] Refresh DP 777 live results
+3c4398c 2026-10-26 20:10:12 +0530 raghucse99-collab Publish Sridevi Night open result before close is available
+87a59ce 2026-10-26 14:21:16 +0000 github-actions[bot] Refresh DP 777 historical charts
+9cc4384 2026-10-26 18:39:15 +0530 raghucse99-collab Increase DP 777 chart number sizes for readability
+c53343b 2026-10-26 18:34:37 +0530 raghucse99-collab Improve full chart coverage and mobile readability
+21bc478 2026-10-26 18:23:25 +0530 raghucse99-collab Add target-plus-offset Jodi search across charts
+47ca70f 2026-10-26 12:15:08 +0000 github-actions[bot] Refresh DP 777 historical charts
+e46ab63 2026-10-26 12:14:16 +0000 github-actions[bot] Refresh DP 777 live results
+82d995d 2026-10-26 17:43:55 +0530 raghucse99-collab Append daily Milan Day results to archive chart
+0af6420 2026-10-26 12:03:38 +0000 github-actions[bot] Refresh DP 777 live results
+68fbb05 2026-10-26 17:33:17 +0530 raghucse99-collab Trigger DP 777 live result refresh
+f8f435e 2026-10-26 11:53:42 +0000 github-actions[bot] Refresh DP 777 live results
+7ccdec5 2026-10-26 17:23:25 +0530 raghucse99-collab Trigger fresh Telegram live-results refresh
+a5b59eb 2026-10-26 11:12:54 +0000 github-actions[bot] Refresh DP 777 live results
+665dd14 2026-10-26 10:54:32 +0000 github-actions[bot] Refresh DP 777 live results
+80144c6 2026-10-26 16:24:12 +0530 raghucse99-collab Preserve Telegram results in live chart feed
+26b6d95 2026-10-26 09:19:22 +0000 github-actions[bot] Refresh DP 777 live results
+0398dcd 2026-10-26 09:19:01 +0000 github-actions[bot] Refresh DP 777 historical charts
+4e7068b 2026-10-26 14:48:26 +0530 raghucse99-collab Write partial live results without guessing missing panels
+78544ec 2026-10-26 14:48:22 +0530 raghucse99-collab Switch Sridevi archive to parseable historical panel table
+3821808 2026-10-26 09:03:54 +0000 github-actions[bot] Refresh DP 777 historical charts
+4e08803 2026-10-26 14:33:14 +0530 raghucse99-collab Use full 2018 Sridevi panel archive source
+e64f810 2026-10-26 08:13:36 +0000 github-actions[bot] Refresh DP 777 live results
+8b9f249 2026-10-26 08:13:15 +0000 github-actions[bot] Refresh DP 777 historical charts
+c17e024 2026-10-26 13:42:33 +0530 raghucse99-collab Let newer Telegram Open posts replace stale complete results
+ea8fb20 2026-10-26 13:37:32 +0530 raghucse99-collab Allow today's live-board results to display without Telegram timestamps
+fa989c1 2026-10-26 13:02:08 +0530 raghucse99-collab Make today's Telegram date check reliable on Android
+0705638 2026-10-26 06:48:39 +0000 github-actions[bot] Refresh DP 777 live results
+e24ce99 2026-10-26 12:17:40 +0530 raghucse99-collab Prevent legacy chart dates from breaking live refresh
+6cca6a6 2026-10-26 12:17:20 +0530 raghucse99-collab Fix Telegram parser to prefer newest market result
+c58beb7 2026-10-26 11:29:35 +0530 raghucse99-collab Show updating status and site refresh during market hours
+5d80a69 2026-10-26 09:39:55 +0530 raghucse99-collab Hide live tile results unless source post is dated today in India
+2547edf 2026-10-26 09:36:54 +0530 raghucse99-collab Deduplicate and sort Milan Day archive by week date
+272d9d7 2026-10-26 09:36:43 +0530 raghucse99-collab Extend Milan Day archive with recent dated weekly results
+f780eb7 2026-10-26 08:03:40 +0530 raghucse99-collab Archive published results into dated weekly charts automatically
+d180916 2026-10-26 08:03:28 +0530 raghucse99-collab Require today's source timestamp before archiving results
+3dc1af8 2026-10-26 08:03:19 +0530 raghucse99-collab Add date-wise daily results to weekly chart archives
+2c73f87 2026-10-26 02:28:41 +0000 github-actions[bot] Refresh DP 777 live results
+dc3b55b 2026-10-26 07:57:41 +0530 raghucse99-collab Ignore old Telegram posts when updating today's live results
+12e892b 2026-10-26 07:52:14 +0530 raghucse99-collab Set Jodi Chart as the default view on page load
+a479e5d 2026-10-26 07:49:38 +0530 raghucse99-collab Make Go to Top return to historical chart top
+422b81d 2026-10-26 07:45:41 +0530 raghucse99-collab Show Jodi Chart before Panel Chart
+37d1fea 2026-10-26 07:40:51 +0530 raghucse99-collab Keep number, day and year search controls on one mobile row
+0b568e3 2026-10-26 07:35:57 +0530 raghucse99-collab Separate Jodi number and weekday search controls
+f0a01f1 2026-10-26 07:32:55 +0530 raghucse99-collab Remove weekly view explanatory text above chart
+0eca2bd 2026-10-26 07:30:43 +0530 raghucse99-collab Support weekday-specific Jodi search across all historical weeks
+239701b 2026-10-26 07:25:07 +0530 raghucse99-collab Remove Source Page button from historical chart controls
+5f99e72 2026-10-26 07:20:13 +0530 raghucse99-collab Hide historical chart source text throughout DP 777
+dfc6b69 2026-10-26 07:16:46 +0530 raghucse99-collab Remove source page attribution from live result tiles
+6abf9a2 2026-10-26 07:14:33 +0530 raghucse99-collab Search weekday Jodi values and remove source status labels
+93e62c0 2026-10-26 06:57:28 +0530 raghucse99-collab Fix weekday and number search, remove source status pills, move Go to Top below chart
+4c4aab7 2026-10-26 06:36:46 +0530 raghucse99-collab Remove duplicate Go to Top button and improve weekday search
+b55d491 2026-10-26 06:31:39 +0530 raghucse99-collab Move Choose a chart below historical chart
+13d050d 2026-10-26 06:28:40 +0530 raghucse99-collab Make chart search weekday-aware and compact mobile controls
+c3a8c71 2026-10-26 00:28:42 +0000 github-actions[bot] Refresh DP 777 live results
+1aa2227 2026-10-26 00:26:38 +0000 github-actions[bot] Refresh DP 777 historical charts
+ef4d056 2026-10-25 22:16:25 +0000 github-actions[bot] Refresh DP 777 live results
+9d46ced 2026-10-25 19:52:31 +0000 github-actions[bot] Refresh DP 777 live results
+348f3ed 2026-10-25 17:24:34 +0000 github-actions[bot] Refresh DP 777 live results
+51f5064 2026-10-25 22:47:06 +0530 raghucse99-collab Repair broken page JavaScript and restore chart controls
+f6ed89b 2026-10-25 22:43:56 +0530 raghucse99-collab Fix chart data loading paths and normalize chart JSON
+8f2e8a7 2026-10-25 22:33:03 +0530 raghucse99-collab Improve result name visibility and fix full chart navigation
+7d6a547 2026-10-25 22:26:35 +0530 raghucse99-collab Move Go to Top above Quick Links and add quick-link Jodi Panel buttons
+2047a8f 2026-10-25 22:24:34 +0530 raghucse99-collab Move Go to Top button above Quick Links
+6779d7f 2026-10-25 22:20:17 +0530 raghucse99-collab Fix quick chart navigation and set Sridevi Night timings
+9ed925e 2026-10-25 22:11:55 +0530 raghucse99-collab Fix quick links chart loading and add Go to Top below links
+e029e5b 2026-10-25 22:07:52 +0530 raghucse99-collab Add Jodi and Panel buttons and market timings
+4606985 2026-10-25 22:03:11 +0530 raghucse99-collab Style DP 777 charts for bold mobile layout
+1472f78 2026-10-25 16:22:39 +0000 github-actions[bot] Refresh DP 777 live results
+5f10b96 2026-10-25 16:22:11 +0000 github-actions[bot] Refresh DP 777 historical charts
+da42e55 2026-10-25 21:51:28 +0530 raghucse99-collab Keep Sridevi Night Sunday results on live-card source
+173491a 2026-10-25 21:51:24 +0530 raghucse99-collab Use Sunday live card for Sridevi Night
+fe878f6 2026-10-25 20:59:38 +0530 raghucse99-collab Document intentional Milan Day archive date gaps
+e3924a7 2026-10-25 19:36:05 +0530 raghucse99-collab Update DP 777 archive description
+9a496ce 2026-10-25 19:35:42 +0530 raghucse99-collab Add date-wise Milan Day historical archive view
+4daa416 2026-10-25 19:35:28 +0530 raghucse99-collab Add date-wise Milan Day 1992-2026 archive
+59adec7 2026-10-25 13:53:05 +0000 github-actions[bot] Refresh DP 777 live results
+d7d25ed 2026-10-25 16:09:11 +0530 raghucse99-collab Remove incomplete historical Jodi placeholder
+1f3c16b 2026-10-25 16:09:01 +0530 raghucse99-collab Add historical Milan Day Jodi dataset placeholder
+9d00b8c 2026-10-25 15:25:49 +0530 raghucse99-collab Use accessible 1993–2026 Milan Day archive source
+deaef62 2026-10-25 15:21:45 +0530 raghucse99-collab Parse all embedded Khabar Milan Day archive tables
+0ef2aae 2026-10-25 09:34:55 +0000 github-actions[bot] Refresh DP 777 historical charts
+0f18f0a 2026-10-25 15:04:16 +0530 raghucse99-collab Use user's exact Khabar.bet Milan Day archive source
+165d02c 2026-10-25 09:29:30 +0000 github-actions[bot] Refresh DP 777 historical charts
+e229200 2026-10-25 14:58:40 +0530 raghucse99-collab Import longer Milan Day historical panel archive
+561e3bb 2026-10-25 09:27:09 +0000 github-actions[bot] Refresh DP 777 live results
+2c683f9 2026-10-25 09:18:09 +0000 github-actions[bot] Refresh DP 777 historical charts
+d3e2530 2026-10-25 14:47:28 +0530 raghucse99-collab Expand Milan Night history using archive dating back to 2012
+c9d7ba0 2026-10-25 09:04:35 +0000 github-actions[bot] Refresh DP 777 historical charts
+f344f87 2026-10-25 14:33:47 +0530 raghucse99-collab Use full historical Kalyan panel archive
+123fa53 2026-10-25 08:56:43 +0000 github-actions[bot] Refresh DP 777 historical charts
+b7d9ad5 2026-10-25 14:26:04 +0530 raghucse99-collab Restore historical chart sources that previously populated DP 777 archive
+d8dcc6c 2026-10-25 14:08:16 +0530 raghucse99-collab Limit historical import to original ten DP 777 charts
+cbd5c38 2026-10-25 14:08:14 +0530 raghucse99-collab Restore DP 777 to original ten charts
+a48a549 2026-10-25 13:58:44 +0530 raghucse99-collab Regenerate per-market chart feeds after data merge
+dc4a9e1 2026-10-25 13:58:21 +0530 raghucse99-collab Publish individual chart feeds during historical refresh
+49eb551 2026-10-25 13:58:14 +0530 raghucse99-collab Add all available Khabar.bet chart markets
+d4f98cc 2026-10-25 13:57:58 +0530 raghucse99-collab Import available Khabar.bet historical chart markets
+4ec3e1e 2026-10-25 13:44:09 +0530 raghucse99-collab Recognize spaced star placeholders and hide empty weeks
+668efb6 2026-10-25 13:40:40 +0530 raghucse99-collab Filter empty weeks using only displayed open jodi close values
+272c893 2026-10-25 13:34:42 +0530 raghucse99-collab Hide fully unpublished weeks across all historical charts
+806b4d5 2026-10-25 13:23:17 +0530 raghucse99-collab Fix JavaScript regex syntax blocking chart page startup
+29bfe42 2026-10-25 13:20:36 +0530 raghucse99-collab Load historical charts from smaller per-market feeds
+1bb4ab3 2026-10-25 13:20:26 +0530 raghucse99-collab Add individual historical chart feed: main-bazar
+71bbbaa 2026-10-25 13:20:23 +0530 raghucse99-collab Add individual historical chart feed: rajdhani-night
+a9cca51 2026-10-25 13:20:20 +0530 raghucse99-collab Add individual historical chart feed: kalyan-night
+1ca6baa 2026-10-25 13:20:18 +0530 raghucse99-collab Add individual historical chart feed: milan-night
+c052e17 2026-10-25 13:20:15 +0530 raghucse99-collab Add individual historical chart feed: sridevi
+decde88 2026-10-25 13:20:13 +0530 raghucse99-collab Add individual historical chart feed: kalyan
+59f5394 2026-10-25 13:20:10 +0530 raghucse99-collab Add individual historical chart feed: rajdhani-day
+bc1ec5b 2026-10-25 13:20:07 +0530 raghucse99-collab Add individual historical chart feed: milan-day
+4f8b9ae 2026-10-25 13:20:05 +0530 raghucse99-collab Add individual historical chart feed: time-bazar
+90d9116 2026-10-25 13:20:02 +0530 raghucse99-collab Add individual historical chart feed: sridevi-day
+8074bf3 2026-10-25 13:13:40 +0530 raghucse99-collab Start chart data loading before optional UI rendering
+210cb92 2026-10-25 13:12:11 +0530 raghucse99-collab Add dedicated historical chart data feed
+709d8f5 2026-10-25 13:09:57 +0530 raghucse99-collab Load historical charts from same-origin feed first
+54a7818 2026-10-25 13:04:11 +0530 raghucse99-collab Hide completely empty weeks in historical charts
+f85d0b4 2026-10-25 07:27:30 +0000 github-actions[bot] Refresh DP 777 live results
+305be16 2026-10-25 12:57:14 +0530 raghucse99-collab Fix Sunday live result fetch helper
+e7d57e8 2026-10-25 12:53:33 +0530 raghucse99-collab Fix Sunday Sridevi live card parsing
+7a94afd 2026-10-25 12:51:35 +0530 raghucse99-collab Use Sunday live card instead of Telegram for Sridevi Day
+53cb138 2026-10-25 12:51:28 +0530 raghucse99-collab Read Sunday Sridevi live results card
+217e447 2026-10-25 06:34:47 +0000 github-actions[bot] Refresh DP 777 live results
+0e27e17 2026-10-25 12:04:27 +0530 raghucse99-collab Complete Telegram result after open-only update
+48d456a 2026-10-25 06:34:25 +0000 github-actions[bot] Refresh DP 777 live results
+8881903 2026-10-25 12:04:21 +0530 raghucse99-collab Display Sridevi open-only live results
+b98401d 2026-10-25 12:04:15 +0530 raghucse99-collab Handle labelled open-only Telegram results
+8958142 2026-10-25 12:04:09 +0530 raghucse99-collab Recognize Sridevi Day Telegram results
+0b650fc 2026-10-25 11:53:43 +0530 raghucse99-collab Keep updated-result pana black and only red Jodis red
+c089432 2026-10-25 11:50:08 +0530 raghucse99-collab Apply red Jodi formula to updated results cards
+5b4b56c 2026-10-25 11:44:33 +0530 raghucse99-collab Refresh DP 777 chart colors with accessible indigo teal palette
+7cfd095 2026-10-25 11:41:44 +0530 raghucse99-collab Fix red Jodi color priority in panel and Jodi charts
+a3ddc2a 2026-10-25 11:38:42 +0530 raghucse99-collab Correct red Jodi digit matching rule
+2cc33f1 2026-10-25 11:38:30 +0530 raghucse99-collab Highlight double and cut-digit Jodis in red
+db423fc 2026-10-25 11:31:58 +0530 raghucse99-collab Enlarge Jodi-only chart and prevent panel numbers clipping
+966da1a 2026-10-25 11:28:06 +0530 raghucse99-collab Increase Jodi chart numbers to reference size
+ca2bbdf 2026-10-25 11:25:06 +0530 raghucse99-collab Increase Jodi number size across DP 777 charts
+238c1c0 2026-10-25 11:22:27 +0530 raghucse99-collab Match DP 777 chart cells to compact reference layout
+b1a4542 2026-10-25 11:22:05 +0530 raghucse99-collab Make DP 777 weekly charts compact and mobile friendly
+dccc9a8 2026-10-25 10:45:25 +0530 raghucse99-collab Fix Sridevi chart aliases and panel digit parsing
+9450189 2026-10-25 04:42:35 +0000 github-actions[bot] Refresh DP 777 live results
+c23622b 2026-10-25 10:08:33 +0530 raghucse99-collab Prevent endless loading states when data feeds fail
+c2521fb 2026-10-25 10:05:29 +0530 raghucse99-collab Restore last working chart page and show clear data-load errors
+854be2c 2026-10-25 09:58:17 +0530 raghucse99-collab Stabilize weekly chart rendering with reference-style cells
+c5dddac 2026-10-25 09:50:17 +0530 raghucse99-collab Render panel digits vertically at sides with centered Jodi
+d6076b8 2026-10-25 09:27:03 +0530 raghucse99-collab Fix chart renderer regex and historical data loading timeout
+165c32c 2026-10-25 09:21:42 +0530 raghucse99-collab Align panel digits left-center-right like reference chart
+96444a4 2026-10-25 09:18:54 +0530 raghucse99-collab Space panel digits horizontally within three chart rows
+be037c9 2026-10-25 09:09:04 +0530 raghucse99-collab Match weekly chart cell layout to reference screenshot
+85bf3d3 2026-10-25 09:01:25 +0530 raghucse99-collab Use compact grayscale styling for weekly charts
+8d2dd74 2026-10-25 03:09:35 +0000 github-actions[bot] Refresh DP 777 live results
+a3209b4 2026-10-25 08:38:48 +0530 raghucse99-collab Add Sridevi Night Telegram result recognition
+8549e05 2026-10-25 08:38:35 +0530 raghucse99-collab Correct Sridevi Night result matching patterns
+a6b97e4 2026-10-25 08:38:16 +0530 raghucse99-collab Add Sridevi Night to live result refresh
+b23f908 2026-10-25 08:35:27 +0530 raghucse99-collab Add tenth chart Sridevi Night after Kalyan
+b289cdf 2026-10-25 08:29:19 +0530 raghucse99-collab Fix Sunday market holiday rules for DP 777
+33979f4 2026-10-25 00:09:10 +0000 github-actions[bot] Refresh DP 777 live results
+b45df32 2026-10-24 21:55:58 +0000 github-actions[bot] Refresh DP 777 live results
+b036993 2026-10-24 20:55:01 +0000 github-actions[bot] Refresh DP 777 historical charts
+d925d2d 2026-10-24 19:40:03 +0000 github-actions[bot] Refresh DP 777 live results
+5df8806 2026-10-24 17:24:05 +0000 github-actions[bot] Refresh DP 777 live results
+47560c6 2026-10-24 22:49:40 +0530 raghucse99-collab Apply weekday-only schedule to Main Bazar
+5e457d7 2026-10-24 17:19:00 +0000 github-actions[bot] Refresh DP 777 live results
+5b4b57a 2026-10-24 22:48:23 +0530 raghucse99-collab Fix live result validation regex
+a12cd9d 2026-10-24 22:48:06 +0530 raghucse99-collab Fix syntax error in Sridevi live result parser
+e4a770b 2026-10-24 22:43:08 +0530 raghucse99-collab Show no game for night markets on weekends
+062bb6e 2026-10-24 22:37:40 +0530 raghucse99-collab Correct Sridevi label and today's Jodi chart result
+7912554 2026-10-24 22:37:34 +0530 raghucse99-collab Correct Sridevi chart result extraction regex
+eeb6107 2026-10-24 22:37:16 +0530 raghucse99-collab Match standalone Sridevi only, not Sridevi Day or Night
+7ac234d 2026-10-24 22:37:09 +0530 raghucse99-collab Fetch standalone Sridevi chart instead of Sridevi Day
+ed99278 2026-10-24 22:36:54 +0530 raghucse99-collab Rename Sridevi Day to Sridevi and link correct chart
+90eff71 2026-10-24 17:02:21 +0000 github-actions[bot] Refresh DP 777 live results
+32614ed 2026-10-24 22:32:04 +0530 raghucse99-collab Calculate final jodi from Open and Close panna results
+eabf00d 2026-10-24 16:54:04 +0000 github-actions[bot] Refresh DP 777 live results
+33d15b3 2026-10-24 22:20:41 +0530 raghucse99-collab Support Telegram Close numbers in compact and multiline posts
+f80c521 2026-10-24 22:20:24 +0530 raghucse99-collab Combine Telegram Open and later three-digit Close results
+a5aa3c0 2026-10-24 22:20:09 +0530 raghucse99-collab Accept Telegram Open results and preserve them until Close arrives
+a175830 2026-10-24 16:45:02 +0000 github-actions[bot] Refresh DP 777 live results
+cfc7cb3 2026-10-24 22:14:19 +0530 raghucse99-collab Remove stale incomplete Milan Night result from live feed
+cc07780 2026-10-24 22:14:12 +0530 raghucse99-collab Display published Telegram results immediately, not only after close time
+8ec2204 2026-10-24 22:14:03 +0530 raghucse99-collab Fix Telegram updater cleanup regex and JSON newline writes
+8f5af8c 2026-10-24 22:10:59 +0530 raghucse99-collab Repair Telegram updater and remove incomplete stale values
+1cbe28e 2026-10-24 21:55:53 +0530 raghucse99-collab Clear stale incomplete Milan Night result on every refresh
+5145f22 2026-10-24 16:22:55 +0000 github-actions[bot] Refresh DP 777 live results
+8e1e8a2 2026-10-24 21:52:08 +0530 raghucse99-collab Keep incomplete Milan Night result unpublished
+185769a 2026-10-24 21:52:02 +0530 raghucse99-collab Block incomplete Milan Night results in all parser paths
+5a00d1b 2026-10-24 16:20:44 +0000 github-actions[bot] Refresh DP 777 live results
+ff3460a 2026-10-24 21:49:45 +0530 raghucse99-collab Reject incomplete Milan Night Telegram results
+cbce3b5 2026-10-24 21:49:38 +0530 raghucse99-collab Remove incomplete Milan Night value from live feed
+98d5264 2026-10-24 16:16:39 +0000 github-actions[bot] Refresh DP 777 live results
+9a9b5d8 2026-10-24 21:45:44 +0530 raghucse99-collab Prevent ambiguous Telegram result assignments
+dfe66b2 2026-10-24 16:09:20 +0000 github-actions[bot] Refresh DP 777 live results
+e2dad68 2026-10-24 21:39:06 +0530 raghucse99-collab Trigger live refresh when Telegram parser changes
+f8dcb29 2026-10-24 16:06:34 +0000 github-actions[bot] Refresh DP 777 historical charts
+ffed3d3 2026-10-24 16:05:51 +0000 github-actions[bot] Refresh DP 777 historical charts
+72f42c8 2026-10-24 21:35:37 +0530 raghucse99-collab Fix Kalyan market regex in Telegram parser
+4bd16e8 2026-10-24 21:35:11 +0530 raghucse99-collab Run Telegram result parser during live refresh
+d5f0a5f 2026-10-24 21:35:07 +0530 raghucse99-collab Add public Telegram result parser for DP 777
+7a4124d 2026-10-24 20:46:01 +0530 raghucse99-collab Correct Sridevi Night result from user screenshot
+3f870f5 2026-10-24 20:36:34 +0530 raghucse99-collab Add custom DP 777 crown logo and polish site header
+fd5d9b1 2026-10-24 20:26:58 +0530 raghucse99-collab Show updated results above and below charts with go to top
+a604d9f 2026-10-24 14:48:52 +0000 github-actions[bot] Refresh DP 777 live results
+83efa32 2026-10-24 20:18:01 +0530 raghucse99-collab Hide confirmed stale night market results
+79877f4 2026-10-24 20:17:48 +0530 raghucse99-collab Hide market results until scheduled close time
+1d17ba9 2026-10-24 14:42:32 +0000 github-actions[bot] Refresh DP 777 live results
+6cdf294 2026-10-24 20:12:15 +0530 raghucse99-collab Do not display stale unpublished market results
+50f8776 2026-10-24 19:51:45 +0530 raghucse99-collab Fix live result validation regex
+d4b409a 2026-10-24 14:15:30 +0000 github-actions[bot] Refresh DP 777 live results
+d66b875 2026-10-24 14:15:10 +0000 github-actions[bot] Refresh DP 777 live results
+99dc5fb 2026-10-24 19:45:01 +0530 raghucse99-collab Load live results from compact feed
+18a4652 2026-10-24 19:44:58 +0530 raghucse99-collab Deploy compact DP 777 live feed
+1aa0c2f 2026-10-24 19:44:55 +0530 raghucse99-collab Publish compact live results feed
+42d3ab2 2026-10-24 14:03:00 +0000 github-actions[bot] Refresh DP 777 live results
+1139f16 2026-10-24 13:58:15 +0000 github-actions[bot] Refresh DP 777 live results
+c719805 2026-10-24 13:57:59 +0000 github-actions[bot] Refresh DP 777 historical charts
+2bd93ab 2026-10-24 19:27:19 +0530 raghucse99-collab Trigger and diagnose live result refresh
+3c09f47 2026-10-24 19:27:17 +0530 raghucse99-collab Show published results without close-time blocking
+4e80a06 2026-10-24 18:12:10 +0530 raghucse99-collab Hide stale live results before each market's publication time
+6fa25fe 2026-10-24 12:23:44 +0000 github-actions[bot] Refresh DP 777 live results
+6cdcbf0 2026-10-24 17:53:32 +0530 raghucse99-collab Preserve existing live results when a source fetch is partial
+a5f1462 2026-10-24 17:45:21 +0530 raghucse99-collab Fix invalid regex preventing DP 777 page script from running
+e748304 2026-10-24 17:42:20 +0530 raghucse99-collab Add alternate data CDN and fix failed-load display
+dff3418 2026-10-24 12:07:46 +0000 github-actions[bot] Refresh DP 777 live results
+4208ecf 2026-10-24 12:07:32 +0000 github-actions[bot] Refresh DP 777 historical charts
+57abec5 2026-10-24 17:36:58 +0530 raghucse99-collab Stop live updater from rerunning on page-only edits
+c38073e 2026-10-24 17:36:53 +0530 raghucse99-collab Stop chart data updater from rerunning on page-only edits
+4c049f5 2026-10-24 11:52:31 +0000 github-actions[bot] Refresh DP 777 live results
+8a88d2c 2026-10-24 11:52:16 +0000 github-actions[bot] Refresh DP 777 historical charts
+27c92fe 2026-10-24 17:21:45 +0530 raghucse99-collab Style unavailable live results as pending
+1d90980 2026-10-24 17:21:38 +0530 raghucse99-collab Fetch newest DP 777 data directly from GitHub raw
+260c3bd 2026-10-24 11:48:45 +0000 github-actions[bot] Refresh DP 777 live results
+cc96aea 2026-10-24 11:48:28 +0000 github-actions[bot] Refresh DP 777 historical charts
+c4c07f1 2026-10-24 17:17:51 +0530 raghucse99-collab Refresh live results when DP 777 page changes
+d03b78c 2026-10-24 17:17:25 +0530 raghucse99-collab Correct placeholder detection in chart updater
+b84bb4e 2026-10-24 17:17:05 +0530 raghucse99-collab Prevent duplicated chart columns and refresh live results on open
+274bdb9 2026-10-24 17:03:56 +0530 raghucse99-collab Fix invalid regex stopping DP 777 JavaScript
+6ac69a4 2026-10-24 16:48:43 +0530 raghucse99-collab Add timeout for stalled DP 777 data feed
+c07a284 2026-10-24 16:46:50 +0530 raghucse99-collab Fix chart date parser JavaScript syntax
+6f194c5 2026-10-24 16:46:40 +0530 raghucse99-collab Keep DP 777 visible when chart feed is delayed
+d269e67 2026-10-24 16:38:59 +0530 raghucse99-collab Hide incomplete current-day chart results until all parts publish
+7f19107 2026-10-24 16:38:50 +0530 raghucse99-collab Detect and suppress duplicated weekday chart columns
+8039f6b 2026-10-24 11:00:04 +0000 github-actions[bot] Refresh DP 777 historical charts
+7d5411f 2026-10-24 16:29:01 +0530 raghucse99-collab Make refresh merge resilient to malformed prior JSON
+965f748 2026-10-24 16:28:55 +0530 raghucse99-collab Make refresh merge resilient to malformed prior JSON
+bf45d28 2026-10-24 16:28:29 +0530 raghucse99-collab Fix JSON write in data refresh workflow
+d55b8cc 2026-10-24 16:28:23 +0530 raghucse99-collab Fix JSON write in data refresh workflow
+181949b 2026-10-24 10:58:06 +0000 github-actions[bot] Refresh DP 777 live results
+2caca32 2026-10-24 16:27:55 +0530 raghucse99-collab Merge chart refresh without overwriting live results
+d3408c3 2026-10-24 16:27:52 +0530 raghucse99-collab Merge live refresh without overwriting chart archive
+e1de9f1 2026-10-24 10:57:47 +0000 github-actions[bot] Refresh DP 777 live results
+2d35a97 2026-10-24 16:27:17 +0530 raghucse99-collab Prevent duplicate live results across market cards
+ca80f12 2026-10-24 16:26:54 +0530 raghucse99-collab Refresh DP 777 colors and visual styling
+531e2a8 2026-10-24 10:46:19 +0000 github-actions[bot] Refresh DP 777 historical chart data
+80b1f8a 2026-10-24 16:15:42 +0530 raghucse99-collab Run historical chart recovery after repairing empty archive
+c6c4dff 2026-10-24 16:14:11 +0530 raghucse99-collab Repair empty DP 777 chart data JSON
+55a8cbb 2026-10-24 10:43:23 +0000 github-actions[bot] Refresh DP 777 live results
+14de38c 2026-10-24 16:12:31 +0530 raghucse99-collab Limit live result refresh to the ten scheduled markets
+8346050 2026-10-24 16:12:28 +0530 raghucse99-collab Restore historical charts for the ten scheduled markets
+c4d9bb8 2026-10-24 16:11:28 +0530 raghucse99-collab Serialize historical and live data refreshes
+adedadc 2026-10-24 16:11:26 +0530 raghucse99-collab Serialize live and historical data refreshes
+a81dc7d 2026-10-24 16:11:13 +0530 raghucse99-collab Prevent live refresh from erasing chart data
+693dc08 2026-10-24 16:07:09 +0530 raghucse99-collab Remove timing table and show only scheduled markets
+c7e1f70 2026-10-24 10:26:03 +0000 github-actions[bot] Refresh DP 777 historical chart data
+4ddf9a4 2026-10-24 15:55:15 +0530 raghucse99-collab Show which historical chart archives still need data
+5bf9041 2026-10-24 15:55:10 +0530 raghucse99-collab Initialize valid data archive for all listed DP 777 markets
+bcff55c 2026-10-24 10:24:59 +0000 github-actions[bot] Refresh DP 777 live results
+d8dae2d 2026-10-24 15:54:43 +0530 raghucse99-collab Include additional live markets from supplied screenshots
+d989a46 2026-10-24 15:54:29 +0530 raghucse99-collab Add India-time market schedule and more visible live markets
+520c4a8 2026-10-24 10:16:48 +0000 github-actions[bot] Refresh DP 777 historical chart data
+46d946e 2026-10-24 15:45:45 +0530 raghucse99-collab Preserve live results during historical chart refresh
+30e0fc5 2026-10-24 15:45:31 +0530 raghucse99-collab Auto-refresh latest live results every minute
+9c0b06a 2026-10-24 10:15:24 +0000 github-actions[bot] Refresh DP 777 live results
+a25498d 2026-10-24 15:45:13 +0530 raghucse99-collab Schedule DP 777 live results refresh every five minutes
+4737599 2026-10-24 15:45:02 +0530 raghucse99-collab Add dedicated five-minute live results updater
+ab5c918 2026-10-24 15:40:22 +0530 raghucse99-collab Display public live results in screenshot-style format
+c9b4056 2026-10-24 15:40:16 +0530 raghucse99-collab Use screenshot-matched public DPBOSS live page and support partial result formats
+708ecc2 2026-10-24 15:40:08 +0530 raghucse99-collab Style live results and add Go to Bottom chart button
+54e2e29 2026-10-24 15:33:22 +0530 raghucse99-collab Track changes to live published results
+fbe2e01 2026-10-24 15:33:10 +0530 raghucse99-collab Correct live result format validation
+cb0c58f 2026-10-24 15:33:01 +0530 raghucse99-collab Correct digit and whitespace patterns in live parser
+f4fba28 2026-10-24 15:31:58 +0530 raghucse99-collab Display matched public source results with verification note
+6cbb03b 2026-10-24 15:31:49 +0530 raghucse99-collab Add free public live-result source parser
+0d50479 2026-10-24 15:27:27 +0530 raghucse99-collab Improve chart readability with larger equal-size colored cells
+e6e774c 2026-10-24 09:53:57 +0000 github-actions[bot] Refresh DP 777 historical chart data
+c909ccc 2026-10-24 15:23:13 +0530 raghucse99-collab Fix chart empty-state rendering syntax
+eea9a54 2026-10-24 15:22:59 +0530 raghucse99-collab Replace blank chart area with source link when data is missing
+bc282af 2026-10-24 15:22:52 +0530 raghucse99-collab Show clear data status instead of endless loading
+32e628d 2026-10-24 15:22:38 +0530 raghucse99-collab Restore valid chart data JSON structure
+1cb885d 2026-10-24 15:21:39 +0530 raghucse99-collab Fix JavaScript error preventing DP 777 chart from rendering
+43d41d9 2026-10-24 15:18:13 +0530 raghucse99-collab Fit all seven weekdays on mobile and compact dates
+ec916cd 2026-10-24 15:18:02 +0530 raghucse99-collab Compact weekly chart cells and remove oversized year headers
+058a07a 2026-10-24 15:14:25 +0530 raghucse99-collab Fit weekly charts to mobile and reserve live panel for live data
+8d7f1ca 2026-10-24 15:07:21 +0530 raghucse99-collab Render latest published results panel after data loads
+8bbf528 2026-10-24 15:07:11 +0530 raghucse99-collab Compact date column and add latest published results panel
+3fb1b1f 2026-10-24 09:28:38 +0000 github-actions[bot] Refresh DP 777 historical chart data
+5c11958 2026-10-24 14:58:00 +0530 raghucse99-collab Preserve panel digits while normalizing source cells
+5061b94 2026-10-24 14:57:54 +0530 raghucse99-collab Correct chart date and missing-result parsing
+7b7017d 2026-10-24 14:57:38 +0530 raghucse99-collab Display weekly chart using separate open, jodi, and close fields
+639a43e 2026-10-24 14:57:32 +0530 raghucse99-collab Parse each weekday as open panna, jodi, and close panna
+eaea680 2026-10-24 14:42:36 +0530 raghucse99-collab Improve DP 777 charts with weekly grid layout
+61fb43f 2026-10-24 09:03:28 +0000 github-actions[bot] Refresh DP 777 historical chart data
+7f824aa 2026-10-24 14:29:42 +0530 raghucse99-collab Retry chart collection with reachable source hosts and browser user agent
+dd826b6 2026-10-24 14:29:33 +0530 raghucse99-collab Show original historical charts when local data is empty
+6fedca6 2026-10-24 08:58:21 +0000 github-actions[bot] Refresh DP 777 historical chart data
+c89380d 2026-10-24 14:27:37 +0530 raghucse99-collab Use accessible historical chart sources and parse market days correctly
+6b8570f 2026-10-24 14:27:29 +0530 raghucse99-collab Fix DP 777 source links and weekly chart layout
+35433b6 2026-10-24 14:25:03 +0530 raghucse99-collab Use Khabar.bet as the Sridevi Night results source
+fd8b8e9 2026-10-24 08:50:31 +0000 github-actions[bot] Refresh DP 777 historical chart data
+296f0ab 2026-10-24 14:20:01 +0530 raghucse99-collab Keep Sridevi weekly chart rows together when filtering
+08d51fc 2026-10-24 14:19:50 +0530 raghucse99-collab Preserve all three rows in Sridevi weekly chart records
+393fbe0 2026-10-24 14:19:42 +0530 raghucse99-collab Point Sridevi Night updater at the provided historical chart source
+66de781 2026-10-24 14:19:38 +0530 raghucse99-collab Link Sridevi Night chart to the exact source page
+c23ba39 2026-10-24 14:19:31 +0530 raghucse99-collab Style Sridevi Night chart as a weekly panel grid
+fb37bdd 2026-10-24 14:11:42 +0530 raghucse99-collab Clarify DP 777 data freshness label
+e7d66f5 2026-10-24 14:11:26 +0530 raghucse99-collab Add chart tabs and improve historical chart navigation
+b9fb5b3 2026-10-24 14:11:08 +0530 raghucse99-collab Run initial DP 777 refresh on website changes
+5adb943 2026-10-24 14:11:00 +0530 raghucse99-collab Commit only meaningful DP 777 chart updates
+797c95f 2026-10-24 14:10:56 +0530 raghucse99-collab Avoid unnecessary hourly chart data commits
+7f01469 2026-10-24 14:10:41 +0530 raghucse99-collab Document DP 777 publishing and automatic updates
+6e28b69 2026-10-24 14:10:33 +0530 raghucse99-collab Schedule DP 777 historical chart refresh
+989fa9e 2026-10-24 14:10:29 +0530 raghucse99-collab Add scheduled DP 777 source data updater
+3e95b02 2026-10-24 14:10:16 +0530 raghucse99-collab Add initial DP 777 chart data file
+129ecd8 2026-10-24 14:10:05 +0530 raghucse99-collab Add DP 777 historical charts website
